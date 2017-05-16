@@ -95,15 +95,77 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body
+{
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  }
 
+/* images font 100% de leur container */
+   .pricing img
+   {
+     width: 100%;
+   }
+.pricing
+{
+  height: 100vh;
+  background-image: linear-gradient(#4157E7, #41E1E7);
+  color: white;
+}
+/* Réglage de la premiere section de la page */
+.price
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  padding-top: 1em;
+}
+.price article
+{
+  width: auto;
+}
 
+/* Liste de la nav */
+.price li
+{
+  list-style-type: none;
+  display: inline-block;
+}
+.price a
+{
+  text-decoration: none;
+  margin-right: 2em;
+  color: white;
+}
+/* Fin reglage liste nav */
+.bouton a
+{
+  padding: 10px 25px;
+  border-radius: 30px 30px;
+  background-color: orange;
+}
+/* container du logo Quiver */
+.price figure
+{
+  width: 3em;
+}
 
+/* Réglage des textes explicatifs haut de page */
+.centre
+{
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
 
-
-
-
-
-
+.centre p
+{
+  margin-top: 30vh;
+}
 
 
 
