@@ -94,7 +94,6 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
 body
 {
   margin-top: 1em;
@@ -107,51 +106,65 @@ body
    {
      width: 100%;
    }
-.pricing
-{
-  height: 100vh;
-  background-image: linear-gradient(#4157E7, #41E1E7);
-  color: white;
-}
-/* Réglage de la premiere section de la page */
+
+/* DEBUT REGLAGE BARRE DE NAVIGATION */
+
 .price
 {
+  text-align: center;
   display: flex;
-  justify-content: space-around;
-  align-items: baseline;
-  padding-top: 1em;
-}
-.price article
-{
-  width: auto;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 10px;
+  left: 5px;
 }
 
-/* Liste de la nav */
-.price li
-{
-  list-style-type: none;
-  display: inline-block;
-}
-.price a
+nav
 {
   text-decoration: none;
-  margin-right: 2em;
-  color: white;
+  width: 100%;
+  height: 80px;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, .05);
+  align-items: baseline;
+  background-color: white;
+  flex-wrap: wrap;
 }
-/* Fin reglage liste nav */
+
+/* Reglage de la liste à gauche de la nav */
+.navbar-toggler-right
+{
+  left: 1rem;
+  position: relative;
+  border-style: none;
+  font-size: 1.5em;
+}
+
+/* Réglage des boutons à droite de la nav */
 .bouton a
 {
   padding: 10px 25px;
   border-radius: 30px 30px;
   background-color: orange;
 }
+
 /* container du logo Quiver */
 .price figure
 {
   width: 3em;
 }
 
-/* Réglage des textes explicatifs haut de page */
+/* FIN DES REGLAGES DE LA BARRE NAV VERSION MOBILE */
+/* Section dégradée */
+.pricing
+{
+  height: 100vh;
+  background-image: linear-gradient(#4157E7, #41E1E7);
+  color: white;
+}
+
+/* Réglage des textes explicatifs page dégradée */
 .centre
 {
   text-align: center;
@@ -167,10 +180,152 @@ body
   margin-top: 30vh;
 }
 
+.tablette
+{
+  display: none;
+}
+
+@media (min-width: 950px) {
+  nav
+  {
+    text-decoration: none;
+    width: 100%;
+    height: 80px;
+    box-shadow: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    background-color: transparent;
+  }
+.price
+{
+  position: relative;
+}
+  /* Liste à gauche de la barre */
+  #navbarSupportedContent
+  {
+    width: auto;
+  }
+
+/* Réglage des boutons à droite de la nav */
+.bouton
+{
+  display: flex;
+}
+.bouton a
+{
+  margin-right: 1em;
+}
+/* Liens de la bar de navigation */
+nav a, #navbarSupportedContent a
+{
+  color: white;
+}
+
+/* activation de la version tablette */
+  .tablette
+  {
+    display: flex;
+  }
+.mobile
+{
+  display: none;
+}
+
+}
 
 
 
 
+/* ------------------- SECTION PRIX ----------------- */
+.prix
+{
+  display: flex;
+  justify-content: center;
+  margin: 50px auto 50px auto;
+  flex-wrap: wrap;
+  background-color: #F6F9F9;
+}
+.info
+{
+  margin: 20px 0;
+  padding: 0 20px;
+  max-width: 350px;
+}
+.info ul
+{
+  list-style: none;
+  line-height: 4em;
+}
+
+.top
+{
+  text-align: center;
+  height: 300px;
+  min-height: 300px;
+  border-radius: 4px 4px 0 0;
+  color: white;
+}
+
+.top h2
+{
+  margin-top: 60px;
+  font-size: 5em;
+  margin-bottom: 50px;
+}
+.top a
+{
+  border: 2px solid white;
+  border-radius: 30px 30px;
+  color: white;
+  padding: 10px 25px;
+}
+.down
+{
+  padding: 35px 30px;
+  border-radius: 0 0 4px 4px;
+  vertical-align: baseline;
+  color: #7c8a96;
+  background-color: white;
+}
+
+.gris
+{
+  background-color: #dae1eb;
+  color: #3b4ecc;
+}
+.bleu
+{
+  background-color: #6d98e6;
+}
+
+.marine
+{
+  background-color: #3b4ecc;
+}
+.orange
+{
+  background-color: #f79e02;
+}
+.titre1
+{
+  color: #91a4bf;
+}
+.titre2
+{
+  color: #6d98e6;
+}
+
+.titre3
+{
+  color: #3b4ecc;
+}
+
+.titre4
+{
+  color: #f79e02;
+}
 
 
 /* ==========================================================================
