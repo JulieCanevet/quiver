@@ -402,15 +402,25 @@ body
 /*start of the page home*/
 
 
+@media (min-width:0px)
+{
 
+  /*rules common*/
+  body
+  {
+    margin : 0;
+  }
+  /*end rules common*/
   /*rules nav class home*/
   .home
   {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-    padding-top: 1em;
+    position: fixed;
+    top: 0;
   }
+
   .home article
   {
     width: auto;
@@ -432,6 +442,7 @@ body
   {
     width: 3em;
   }
+
   /*end rules nav class home*/
 
 
@@ -444,9 +455,13 @@ body
 
   .accueil
   {
-    height: 100vh;
-    background-image: linear-gradient(#4157E7, #41E1E7);
+
+    background: url(../img/home-alone.png)#41E1E7;
+    background-size: 140vh;
+    background-position: top;
+    background-repeat: no-repeat;
     color: white;
+
   }
   /*end section class accueil*/
 
@@ -473,15 +488,21 @@ body
     margin: auto;
     display: flex;
     flex-direction: column;
-    margin-top: 2em;
+    padding-top: 7em;
   }
 
-  .fullscre p
+ .btn
   {
-    margin-top: 30vh;
+    padding: 10px 25px;
+    border-radius: 30px 30px;
+    background-color: orange;
+    margin-bottom: 1em;
   }
+
   /*end article class fullscre*/
 
+
+}
 
 
 /*end of the page home*/
