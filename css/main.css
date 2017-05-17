@@ -173,6 +173,324 @@ body
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*rules sana*/
+
+/*start of the page home*/
+
+
+
+  /*rules nav class home*/
+  .home
+  {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding-top: 1em;
+  }
+  .home article
+  {
+    width: auto;
+  }
+
+  .home li
+  {
+    list-style-type: none;
+    display: inline-block;
+  }
+  .home a
+  {
+    text-decoration: none;
+    margin-right: 2em;
+    color: white;
+  }
+
+  .home figure
+  {
+    width: 3em;
+  }
+  /*end rules nav class home*/
+
+
+
+  /*start section class accueil  */
+  .accueil img
+  {
+    width: 100%;
+  }
+
+  .accueil
+  {
+    height: 100vh;
+    background-image: linear-gradient(#4157E7, #41E1E7);
+    color: white;
+  }
+  /*end section class accueil*/
+
+
+
+
+  /*start article class tonbou*/
+  .tonbou a
+  {
+    padding: 10px 25px;
+    border-radius: 30px 30px;
+    background-color: orange;
+  }
+  /*end article class tonbou*/
+
+
+
+
+  /*start article class fullscre*/
+  .fullscre
+  {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+  }
+
+  .fullscre p
+  {
+    margin-top: 30vh;
+  }
+  /*end article class fullscre*/
+
+
+
+/*end of the page home*/
+
+
+  /*end rules sana*/
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
