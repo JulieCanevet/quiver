@@ -167,10 +167,94 @@ body
   margin-top: 30vh;
 }
 
+/* ------------------- SECTION PRIX ----------------- */
+.prix
+{
+  display: flex;
+  justify-content: center;
+  margin: 50px auto 50px auto;
+  flex-wrap: wrap;
+  background-color: #F6F9F9;
+}
+.info
+{
+  margin: 20px 0;
+  padding: 0 20px;
+  max-width: 350px;
+}
+.info ul
+{
+  list-style: none;
+  line-height: 4em;
+}
 
+.top
+{
+  text-align: center;
+  height: 300px;
+  min-height: 300px;
+  border-radius: 4px 4px 0 0;
+  color: white;
+}
 
+.top h2
+{
+  margin-top: 60px;
+  font-size: 5em;
+  margin-bottom: 50px;
+}
+.top a
+{
+  border: 2px solid white;
+  border-radius: 30px 30px;
+  color: white;
+  padding: 10px 25px;
+}
+.down
+{
+  padding: 35px 30px;
+  border-radius: 0 0 4px 4px;
+  vertical-align: baseline;
+  color: #7c8a96;
+  background-color: white;
+}
 
+.gris
+{
+  background-color: #dae1eb;
+  color: #3b4ecc;
+}
+.bleu
+{
+  background-color: #6d98e6;
+}
 
+.marine
+{
+  background-color: #3b4ecc;
+}
+.orange
+{
+  background-color: #f79e02;
+}
+.titre1
+{
+  color: #91a4bf;
+}
+.titre2
+{
+  color: #6d98e6;
+}
+
+.titre3
+{
+  color: #3b4ecc;
+}
+
+.titre4
+{
+  color: #f79e02;
+}
 
 
 /* ==========================================================================
