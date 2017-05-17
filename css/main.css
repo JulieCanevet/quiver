@@ -173,6 +173,121 @@ body
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*start of section features ivan */
+.features
+{
+  height: 100vh;
+  background-image: linear-gradient(#F63A4F,#F14430);
+  color: white;
+}
+
+.features img
+{
+  width: 100%;
+}
+
+.center
+{
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+.center h1
+{
+  font-size: 70px;
+}
+
+.center h3
+{
+
+  font-size: 25px;
+}
+
+
+
+
+
+
+/*end of section features*/
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
