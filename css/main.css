@@ -94,13 +94,19 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+@media (min-width: 0px)  {
+  body
+  {
+margin:0;
+}
+}
 
-body
+/*body
 {
   margin-top: 1em;
   margin-left: 1em;
   margin-right: 1em;
-  }
+  }*/
 
 /* images font 100% de leur container */
    .pricing img
@@ -263,7 +269,6 @@ body
 .center
 {
   text-align: center;
-  width: 80%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -272,17 +277,23 @@ body
 
 .center h1
 {
-  font-size: 70px;
+  font-size: 40px;
 }
 
 .center h3
 {
-
-  font-size: 25px;
+font-size: 22px;
 }
 
+.tel img
+{
+  width: 70px;
+}
 
-
+.imageordi img
+{
+  width: 350px;
+}
 
 
 
