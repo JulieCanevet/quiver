@@ -110,6 +110,7 @@ textarea {
   justify-content: space-between;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 
 nav
@@ -231,6 +232,57 @@ nav a, #navbarSupportedContent a
   display: none;
 }
 /* FIN DE CE QU'IL FAUT RECUPERER POUR LA NAV */
+
+/* KING BONNES AFFAIRES */
+.king
+{
+  position: relative;
+  width: 650px;
+  margin: auto;
+  height: 420px;
+}
+/*Version mobile */
+.king figure
+{
+  display: none;
+}
+
+.corps
+{
+  position: absolute;
+  width: 370px;
+  height: 370px;
+  top:28px;
+  left: 142px;
+  background: url(../img/good_body.svg) no-repeat center;
+}
+
+.brasgauche, .brasdroit
+{
+  position: absolute;
+  width: 257px;
+  height: 64px;
+  top: 220px;
+}
+.brasgauche
+{
+  background: url(../img/good_left_bras.svg) no-repeat center;
+  left: 11px;
+}
+.brasdroit
+{
+  background: url(../img/good_right_bras.svg) no-repeat center;
+  right: 12px;
+}
+.tete
+{
+  position: absolute;
+  width: 151px;
+  height: 195px;
+  top: 2px;
+  left: 249px;
+  background: url(../img/good_head.svg) no-repeat center;
+}
 }
 /* ------------------- SECTION PRIX ----------------- */
 .prix
@@ -330,20 +382,85 @@ nav a, #navbarSupportedContent a
 .caesar img
 {
   width: 100%;
+  z-index: -1;
 }
 
+/* Reglage du titre sur la photo caesar */
+.caesar figure h3
+{
+  position: absolute;
+  z-index: 0;
+  color: white;
+  text-align: center;
+  padding-top: 7em;
+}
 
+.caesar article
+{
+  background-image: linear-gradient(#F2403B, #EF4727);
+  padding: 4em;
+  color: white;
+}
+.caesar article h2
+{
+  margin-top: 2em;
+}
 
+.caesar article p
+{
+  margin-top: 4em;
+}
 
+/* SECTION GOOD */
+.good
+{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  height:
+}
 
+/* SECTION KING */
 
+.king figure
+{
+  width: 100%;
+}
 
+/* Icones profit et université */
+.profit
+{
+  display: flex;
+  justify-content: space-around;
+}
+.responds
+{
+  text-align: center;
+  line-height: 2em;
+}
 
-
-
-
-
-
+.responds ul
+{
+  list-style: none;
+}
+.responds li:hover
+{
+  border: 2px solid #18e2bf;
+  color: #18e2bf;
+  padding: 10px 25px;
+  border-radius: 30px 30px;
+  
+}
+.started li
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.started li i
+{
+  color: grey;
+}
 
 /* ==========================================================================
    Helper classes
