@@ -94,12 +94,15 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-body
-{
-  margin-top: 1em;
-  margin-left: 1em;
-  margin-right: 1em;
-  }
+
+@media (min-width: 0px)  {
+  body
+  {
+margin:0;
+}
+}
+
+
 
 /* images font 100% de leur container */
    .pricing img
@@ -321,6 +324,126 @@ nav a, #navbarSupportedContent a
   color: #f79e02;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*start of section features ivan */
+.features
+{
+  height: 100vh;
+  background-image: linear-gradient(#F63A4F,#F14430);
+  color: white;
+}
+
+.features img
+{
+  width: 100%;
+}
+
+.center
+{
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+.center h1
+{
+  font-size: 40px;
+}
+
+.center h3
+{
+font-size: 22px;
+}
+
+.tel img
+{
+  width: 70px;
+}
+
+.imageordi img
+{
+  width: 350px;
+}
+
+
+
+/*end of section features*/
 
 /* ==========================================================================
    Helper classes
