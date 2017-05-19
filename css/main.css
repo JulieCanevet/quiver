@@ -140,6 +140,7 @@ nav
   padding: 10px 25px;
   border-radius: 30px 30px;
   background-color: orange;
+  color: white;
 }
 
 /* container du logo Quiver */
@@ -165,7 +166,7 @@ nav
   margin: auto;
   display: flex;
   flex-direction: column;
-  margin-top: 2em;
+  margin-top: 5em;
 }
 
 .centre p
@@ -283,6 +284,11 @@ nav a, #navbarSupportedContent a
   left: 249px;
   background: url(../img/good_head.svg) no-repeat center;
 }
+
+.light
+{
+  display: flex;
+}
 }
 /* ------------------- SECTION PRIX ----------------- */
 .prix
@@ -372,12 +378,22 @@ nav a, #navbarSupportedContent a
 {
   color: #f79e02;
 }
-
+/* ------ CAROUSEL -------- */
+.carousel p
+{
+  color: black;
+  padding-top: 2em;
+}
+.carousel
+{
+ height: 300px;
+}
 /* -------------- DEBUT DE LA SECTION CAESAR ----------------- */
 
 .caesar figure
 {
   width: 100%;
+  margin: 0;
 }
 .caesar img
 {
@@ -433,23 +449,63 @@ nav a, #navbarSupportedContent a
   display: flex;
   justify-content: space-around;
 }
+
+/* Fond gris bas de page */
+.light
+{
+  background-color: #F6F9F9;
+  margin: 0;
+}
+
+/* Section liste principale */
 .responds
 {
   text-align: center;
-  line-height: 2em;
+  line-height: 3em;
 }
-
+.responds h2
+{
+  line-height: 0;
+}
+.responds h2 img
+{
+  margin-bottom: 30px;
+}
+.responds h2, .started h2
+{
+  text-align: center;
+  color: #18e2bf;
+  padding-top: 1em;
+  padding-bottom: .75em;
+}
 .responds ul
 {
   list-style: none;
 }
-.responds li:hover
+.responds li a
+{
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+}
+.responds li a:hover, .responds li a:active
 {
   border: 2px solid #18e2bf;
   color: #18e2bf;
   padding: 10px 25px;
   border-radius: 30px 30px;
-  
+}
+
+/* Section listes secondaires */
+.started
+{
+  width: 95%;
+  margin: auto;
+}
+
+.started ul
+{
+  margin-top: 2em;
 }
 .started li
 {
@@ -457,9 +513,21 @@ nav a, #navbarSupportedContent a
   align-items: center;
   justify-content: space-between;
 }
-.started li i
+.started i
 {
   color: grey;
+}
+
+.started li:hover, .started li i:hover
+{
+  color: #18e2bf;
+}
+
+footer
+{
+  margin: auto;
+  margin-top: 4em;
+  width: 90%;
 }
 
 /* ==========================================================================
