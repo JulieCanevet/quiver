@@ -559,6 +559,7 @@ body
     color: #18e2bf;
     font-size: 30px;
     border-bottom : 2px solid #1FE2CB;
+    width: 90%;
   }
 
   .email input:hover
@@ -659,7 +660,7 @@ body
 .click
 {
 
-  width: 70%;
+  width: 50%;
 }
 
 .click1
@@ -667,6 +668,11 @@ body
   width: 25%;
 }
 /*end rules article class fullscre*/
+
+.email input
+{
+  width: 50%;
+}
 
   /*end rules page home*/
 
@@ -678,9 +684,21 @@ body
 
 
 
-@media (min-width:615px)
+@media (min-width:900px)
 {
   /*rules page home*/
+
+  /*rules common*/
+  .torse
+  {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  /*end rules common*/
+
+/*rules div class touts*/
+
   .touts
   {
     display: flex;
@@ -691,6 +709,7 @@ body
   {
     flex-wrap: wrap;
     width: 54%;
+    margin-left: 10px;
   }
 
   .newsletter
@@ -703,8 +722,21 @@ body
   .foll
   {
     width: 100%;
-    margin-left: 10px;
+    margin-left: 2em;
   }
+
+  .newsletter
+  {
+    text-align: center;
+    padding-top: 4em;
+  }
+
+  .email input
+  {
+    width: 90%;
+  }
+  /*end rules div class touts*/
+
 
   /*end rules page home*/
 
