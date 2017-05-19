@@ -18,7 +18,7 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
-<body>
+<body class="torse">
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -53,12 +53,14 @@
 
         <article class="fullscre">
             <h1>THAT FEELING YOU GET <br>WHEN ...</h1>
-            <h3> you just pressed <mark>SEND</mark>and wish <br>you could take it back</h3>
+            <h3> you just pressed <span>SEND</span>and wish <br>you could take it back</h3>
 
             <p>Sign up now and get 100GB storage for free !</p>
 
-            <a class="btn btn-round-fill sunglow" href="#">E-mail or Phone number</a>
-            <a class="btn btn-round-fill sunglow" href="#">Sign in</a>
+        <div class="join">
+            <a class="btn btn-round-fill sunglow click" href="#">E-mail or Phone number</a>
+            <a class="btn btn-round-fill sunglow click1" href="#">JOIN FREE</a>
+          </div>
 
             <h3>We are here to let you share however you <br>want , and take it back when you need .</h3>
         </article>
@@ -67,23 +69,28 @@
     <!-- end the section class accueil -->
 
 
+<div class="touts">
+
 
     <!-- start div class newsletter -->
     <div class="newsletter">
         <p>Subscribe to our newsletter to start receiving Quiver news</p>
-
+        <form class="email" action="index.html" method="post">
+          <p><input type="text" name="Your e-mail" id="Your e-mail" value="Your e-mail"></p>
+        </form>
 
     </div>
     <!-- end div class newsletter -->
 
 
+<div class="appfoll">
 
     <!-- start nav class app -->
     <nav class="app">
         <ul>
-            <li><a href="#"></a>Apps</li>
-            <li><a href="#"></a>About</li>
-            <li><a href="#"></a>Careers</li>
+            <li><a href="#">Apps</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
         </ul>
     </nav>
     <!-- start nav class app -->
@@ -98,7 +105,10 @@
     </div>
     <!-- end div class foll -->
 
+  </div>
 
+
+</div>
 
 
 
