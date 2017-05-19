@@ -285,10 +285,36 @@ nav a, #navbarSupportedContent a
   background: url(../img/good_head.svg) no-repeat center;
 }
 
-.light
+.caesar, .light
 {
   display: flex;
+  width: 100%;
 }
+.caesar
+{
+  justify-content: center;
+}
+/*.caesar article, .caesar figure
+{
+  height: 649px;
+  min-height: 649px;
+  width: 50%;
+
+}*/
+.responds
+{
+  width: 50%;
+}
+.responds h2
+{
+  position: sticky;
+  top: .2em;
+}
+ .responds ul
+ {
+   position: sticky;
+   top: 9em;
+ }
 }
 /* ------------------- SECTION PRIX ----------------- */
 .prix
@@ -408,7 +434,10 @@ nav a, #navbarSupportedContent a
   z-index: 0;
   color: white;
   text-align: center;
-  padding-top: 7em;
+  padding-top: 20%;
+  padding-left: 10%;
+  font-size: 3em;
+  line-height: 1.5em;
 }
 
 .caesar article
@@ -466,6 +495,7 @@ nav a, #navbarSupportedContent a
 .responds h2
 {
   line-height: 0;
+  margin-bottom: 1em;
 }
 .responds h2 img
 {
@@ -526,7 +556,6 @@ nav a, #navbarSupportedContent a
 footer
 {
   margin: auto;
-  margin-top: 4em;
   width: 90%;
 }
 
