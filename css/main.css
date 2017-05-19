@@ -94,13 +94,6 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-body
-{
-  margin-top: 1em;
-  margin-left: 1em;
-  margin-right: 1em;
-  }
-
 /* images font 100% de leur container */
    .pricing img
    {
@@ -117,8 +110,6 @@ body
   justify-content: space-between;
   position: fixed;
   top: 0;
-  right: 10px;
-  left: 5px;
 }
 
 nav
@@ -130,6 +121,7 @@ nav
   align-items: baseline;
   background-color: white;
   flex-wrap: wrap;
+
 }
 
 /* Reglage de la liste à gauche de la nav */
@@ -187,6 +179,14 @@ nav
 
 @media (min-width: 950px) {
 /* - - - - - - - - - PASSAGE NAV VERSION TABLETTE - - - - */
+/* ajout des marges au body */
+body
+{
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  }
+
   nav
   {
     width: 100%;
@@ -320,6 +320,29 @@ nav a, #navbarSupportedContent a
 {
   color: #f79e02;
 }
+
+/* -------------- DEBUT DE LA SECTION CAESAR ----------------- */
+
+.caesar figure
+{
+  width: 100%;
+}
+.caesar img
+{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ==========================================================================
