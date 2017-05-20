@@ -457,7 +457,7 @@ body
   {
 
     background: url(../img/home-alone.png)#14C7EB;
-    background-size: 130vh;
+    background-size: 140vh;
     background-position: top;
     background-repeat: no-repeat;
     color: white;
@@ -525,6 +525,7 @@ body
 {
   background-color: #14C7EB;
   color: white;
+  border-color: white;
 }
 
   .click , .click1
@@ -637,10 +638,7 @@ body
   .app ul :hover
   {
     border-bottom : 2px solid #1FE2CB;
-    text-decoration: none;
   }
-
-
 
 .app ul li a
 {
@@ -679,6 +677,70 @@ body
 
 
 /*end of the page home*/
+
+
+@media (min-width:455px)
+{
+  /*rules page home*/
+
+  .accueil
+  {
+    height: 120vh;
+  }
+
+
+  .fullscre h1
+  {
+    font-size: 38px;
+  }
+
+  .fullscre h3
+  {
+    font-size: 24px;
+  }
+
+  .fullscre h3 span
+  {
+    font-size: 14px;
+  }
+
+  .fullscre p
+  {
+    font-size: 20px;
+  }
+
+  .email input
+  {
+    font-size: 32px;
+  }
+
+  .email input:hover
+  {
+    font-size: 15px;
+  }
+
+  .newsletter p
+  {
+    font-size: 19px;
+  }
+
+  .foll a
+  {
+    font-size: 16px;
+  }
+
+  .app ul
+  {
+    font-size: 20px;
+  }
+
+  .foll p
+  {
+    font-size: 14px;
+  }
+  /*end rules page home*/
+}
+
 
 
 
@@ -720,6 +782,7 @@ body
 {
   width: 50%;
 }
+
 
   /*end rules page home*/
 
@@ -784,6 +847,60 @@ body
   }
   /*end rules div class touts*/
 
+
+/*rules font-size elements*/
+
+.fullscre h1
+{
+  font-size: 52px;
+}
+
+.fullscre h3
+{
+  font-size: 30px;
+}
+
+.fullscre h3 span
+{
+  font-size: 19px;
+}
+
+.fullscre p
+{
+  font-size: 21px;
+}
+
+.email input
+{
+  font-size: 32px;
+}
+
+.email input:hover
+{
+  font-size: 15px;
+}
+
+.newsletter p
+{
+  font-size: 26px;
+}
+
+.foll a
+{
+  font-size: 18px;
+}
+
+.app ul
+{
+  font-size: 22px;
+}
+
+.foll p
+{
+  font-size: 15px;
+}
+
+/*end rules font-size elements*/
 
   /*end rules page home*/
 
