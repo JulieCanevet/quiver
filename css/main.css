@@ -695,7 +695,6 @@ body
 
 .download
 {
-  height: 100vh;
   background-color: #00E7DA;
   color: white;
 }
@@ -708,6 +707,61 @@ body
   height: 90px;
   width: 90px;
 }
+
+.coming
+{
+  background-color: #99E9F9;
+  color: #00E7DA;
+  border-radius: 18px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-family: 'Avenir LT Std 95 Black';
+}
+
+.coming:hover
+{
+  color: #00E7DA;
+}
+
+.getit
+{
+  background-color: white;
+  color: #00E7DA;
+  border-radius: 18px;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  font-family: 'Avenir LT Std 95 Black';
+}
+
+.getit:hover
+{
+  color: white;
+  background-color: #00E7DA;
+  border: solid 1px white;
+}
+
+.windows , .mac , .beta , .android
+{
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 3em;
+  padding-top: 2em;
+}
+
+
+.windows h4 , .mac h4 , .beta h4 , .android h4
+{
+  margin-top: 2em;
+  font-family: 'Avenir LT Std 95 Black';
+  font-size: 20px;
+}
+
+.windows p , .mac p , .beta p , .android p
+{
+  font-family: 'Avenir LT Std 65 Medium';
+  font-size: 16px;
+}
+
 /*end rules article class trecen*/
 
 
