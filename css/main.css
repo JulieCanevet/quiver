@@ -696,7 +696,8 @@ body
 .download
 {
   height: 100vh;
-  background-image: linear-gradient(#4157E7, #41E1E7);
+  /*background-image: linear-gradient(#70f0ea, #41E1E7,#18e2bf );*/
+  background-color: #00E7DA;
   color: white;
 }
 /*end rules section class download*/
