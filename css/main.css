@@ -595,6 +595,101 @@ footer
 
 /*end of footer rules*/
 
+/*------------start of media query tablette-------------*/
+
+@media (min-width:768px) {
+
+/*section of features*/
+  .center
+  {
+    margin-top: 10%;
+  }
+
+  .imageordi img
+  {
+    width: 1000px;
+  }
+
+.tel .vignet
+{
+  width: 150px;
+}
+  /*end section of features*/
+
+  /*start of black ivan*/
+
+  .blackivan
+  {
+    width: 100%;
+  }
+
+  .blackivan img
+  {
+    width: 100%;
+  }
+
+
+
+  /*end of black ivan*/
+
+
+
+}
+
+/*------------end of media query tablette-------------*/
+
+
+
+/*---------------------start of media query 980px----------------------------*/
+
+@media (min-width:980px) {
+
+
+.whiteivan,.blackivan,.two,.homme
+{
+  display: flex;
+}
+
+.figureivan img,.blackivan img
+{
+  width: 400px;
+}
+
+.whiteivan
+{
+  width: 100%;
+}
+
+
+
+}
+
+/*----------------------end of media query 980px-----------------------------*/
+
+/*start of media query 1280*/
+
+@media (min-width:1280px) {
+
+  .imageordi
+  {
+    display: none;
+  }
+
+  .features
+  {
+    height: 100vh;
+  }
+
+  .center
+  {
+    margin-top: 0;
+  }
+
+}
+
+
+/*end of media query 1280*/
+
 
 
 
