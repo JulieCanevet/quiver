@@ -95,12 +95,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-@media (min-width: 0px)  {
-  body
-  {
-margin:0;
-}
-}
 
 
 
@@ -120,8 +114,7 @@ margin:0;
   justify-content: space-between;
   position: fixed;
   top: 0;
-  right: 10px;
-  left: 5px;
+
 }
 
 nav
@@ -394,7 +387,70 @@ nav a, #navbarSupportedContent a
 
 
 
+/*ivan commun rules*/
 
+.whiteivan h3, .blackivan h3, .two h3 , .homme h3
+{
+  font-size: 20px;
+  color: #36454e;
+  margin-bottom: 40px;
+  font-family: 'Avenir LT Std 35 Light';
+
+}
+
+.whiteivan p, .blackivan p, .two p , .homme p
+{
+  color: #7c8a96;
+  font-size: 20px;
+  font-family: 'Avenir LT Std 45 Book';
+
+}
+
+svg
+{
+  height: 100px;
+}
+
+.blackivan
+{
+  background-color: rgb(40,43,51);
+}
+
+.blackivan img, .homme img
+{
+  width: 90%;
+}
+
+.blackivan h3,.righttwo h3,.righttwo p,.rightblack p
+{
+  color: white;
+}
+
+.lefthomme, .righttwo
+{
+  background-image: linear-gradient(#F63A4F,#F14430);
+}
+
+.lefthomme h3
+{
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.rightblack h3
+{
+  font-size: 25px;
+  text-align: center;
+}
+
+
+
+
+
+
+/*end commun rules*/
 
 
 
@@ -402,9 +458,9 @@ nav a, #navbarSupportedContent a
 /*start of section features ivan */
 .features
 {
-  height: 100vh;
+  height: 75vh;
   background-image: linear-gradient(#F63A4F,#F14430);
-  color: white;
+
 }
 
 .features img
@@ -418,17 +474,19 @@ nav a, #navbarSupportedContent a
   margin: auto;
   display: flex;
   flex-direction: column;
-  margin-top: 2em;
+  margin-top: 25%;
 }
 
 .center h1
 {
   font-size: 40px;
+  color: white;
 }
 
 .center h3
 {
 font-size: 22px;
+color: white;
 }
 
 .tel img
@@ -444,6 +502,101 @@ font-size: 22px;
 
 
 /*end of section features*/
+
+/*start of div tel*/
+
+.tel
+{
+ margin-top: 40px;
+}
+
+.vignets
+{
+  margin-left: 49%;
+}
+
+.vignets {
+   display:none;
+     }
+
+.imageordi
+{
+  display: none;
+}
+
+
+
+/*end of div tel*/
+
+
+/*start of ul social resaux*/
+
+.socialreseau
+{
+  width: 200px;
+  margin-bottom: 18%;
+}
+
+.socialreseau ul
+{
+  list-style: none;
+}
+
+
+/*end of ul social resaux*/
+
+/*start of footer rules*/
+
+
+
+footer
+{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.rightfooter h3
+{
+  color: #7c8a96;
+  text-align: center;
+  font-size: 20px;
+}
+
+.about
+{
+  display: flex;
+  font-family: 'Avenir LT Std 45 Book';
+    justify-content: space-between;
+
+
+
+}
+
+.follow
+{
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  width: 50%;
+
+  }
+
+
+.about ul
+{
+  list-style:none;
+}
+
+.follow span
+{
+  color: rgb(81,245,249);
+}
+
+
+/*end of footer rules*/
+
+
+
 
 /* ==========================================================================
    Helper classes
