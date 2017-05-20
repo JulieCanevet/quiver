@@ -679,6 +679,39 @@ body
 /*end of the page home*/
 
 
+
+
+
+
+
+/*rules page download*/
+
+
+/*rules section class download*/
+.download img
+{
+  width: 100%;
+}
+
+.download
+{
+  height: 100vh;
+  background-image: linear-gradient(#4157E7, #41E1E7);
+  color: white;
+}
+/*end rules section class download*/
+
+
+
+
+
+/*end rules page download*/
+
+
+
+
+
+
 @media (min-width:455px)
 {
   /*rules page home*/
