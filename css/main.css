@@ -534,6 +534,39 @@ body
     margin-bottom: 1em;
   }
 
+  .fullscre h1
+  {
+    font-family: 'Avenir LT Std 95 Black';
+    font-size: 34px;
+  }
+
+  .fullscre h3
+  {
+    font-family: 'Avenir LT Std 35 Light';
+    font-size: 20px;
+  }
+
+  .fullscre h3 span
+  {
+    font-size: 12px;
+  }
+
+  .fullscre p
+  {
+    font-family: 'Avenir LT Std 95 Black';
+    font-size: 17px;
+  }
+
+  .join .click
+  {
+    font-family: 'Avenir LT Std 45 Book';
+  }
+
+  .join .click1
+  {
+    font-family: 'Avenir LT Std 95 Black';
+  }
+
   /*end article class fullscre*/
 
 
