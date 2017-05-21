@@ -891,6 +891,30 @@ body
 
 
 
+
+
+@media (min-width:768px)
+{
+  /*rules page download*/
+  .windows , .beta
+  {
+    border-right: 1px solid white;
+  }
+
+  .beta , .android
+  {
+    border-bottom: 0;
+  }
+  /*end rules page download*/
+}
+
+
+
+
+
+
+
+
 @media (min-width:900px)
 {
   /*rules page home*/
@@ -1000,6 +1024,28 @@ body
 /*end rules font-size elements*/
 
   /*end rules page home*/
+
+
+
+  @media (min-width:992px)
+  {
+    /*rules page download*/
+    .trecen
+    {
+      height: 100vh;
+    }
+
+    .mac
+    {
+      border-right: 1px solid white;
+    }
+
+    .windows , .mac
+    {
+      border-bottom: 0;
+    }
+    /*end rules page download*/
+  }
 
   /*end rules sana*/
 
