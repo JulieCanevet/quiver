@@ -184,10 +184,12 @@ nav
 {
   display: flex;
   justify-content: center;
-  margin: 50px auto 50px auto;
+  margin: 50px auto;
+  margin-bottom: 0;
   flex-wrap: wrap;
   background-color: #F6F9F9;
 }
+
 .info
 {
   margin: 20px 0;
@@ -198,6 +200,20 @@ nav
 {
   list-style: none;
   line-height: 4em;
+}
+
+/* Bouton "view details" */
+.info p a 
+{
+  width: 310px;
+  background-color: #C8CDD6;
+  color: #3b4ecc;
+  height: 54px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-color: transparent;
+  padding-top: 15px;
+  padding-left: 110px;
 }
 
 .top
@@ -212,15 +228,17 @@ nav
 .top h2
 {
   margin-top: 60px;
-  font-size: 5em;
+  font-size: 4em;
   margin-bottom: 50px;
 }
+
 .top a
 {
   border: 2px solid white;
   border-radius: 30px 30px;
   color: white;
   padding: 10px 25px;
+  text-decoration: none;
 }
 .down
 {
@@ -229,26 +247,64 @@ nav
   vertical-align: baseline;
   color: #7c8a96;
   background-color: white;
+  flex-direction: column;
 }
 
-.gris
+.gris, .gris a
 {
   background-color: #dae1eb;
   color: #3b4ecc;
+  border-color: #3b4ecc; 
 }
+.gris a:hover
+{
+  background-color: #3b4ecc;
+  color: white;
+  text-decoration: none;
+}
+
 .bleu
 {
   background-color: #6d98e6;
+}
+.bleu a:hover
+{
+  color: #6d98e6;
+  background-color: white;
+  border-color: white;
 }
 
 .marine
 {
   background-color: #3b4ecc;
 }
+.marine a:hover
+{
+  color: #3b4ecc;
+  background-color: white;
+  border-color: white;
+}
+
 .orange
 {
   background-color: #f79e02;
 }
+.orange h3
+{
+  color: #FBCF81;
+  font-size: 17px;
+  padding-bottom: 2.8em;
+  margin-top: 3em;
+}
+
+.orange a:hover
+{
+  color: #f79e02;
+  background-color: white;
+  border-color: white;
+}
+
+/* Titres dans l'ordre des ul de presentation des prix */
 .titre1
 {
   color: #91a4bf;
@@ -272,11 +328,17 @@ nav
 {
   color: black;
   font-size: 20px;
+  margin-top: 1.8em;
 }
 .carousel
 {
  max-height: 300px;
  margin-bottom: 2em;
+ margin-top: 0;
+}
+.carousel .img-fluid
+{
+  width: 100%;
 }
 
 /* CAROUSEL PARTIE JULIE */
