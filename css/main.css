@@ -417,8 +417,7 @@ body
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-    position: fixed;
-    top: 0;
+    padding-top: 2em;
   }
 
   .home article
@@ -431,11 +430,19 @@ body
     list-style-type: none;
     display: inline-block;
   }
+
   .home a
   {
     text-decoration: none;
     margin-right: 2em;
     color: white;
+    font-family: 'Avenir LT Std 65 Medium';
+    font-size: 20px;
+  }
+
+  .home a:hover
+  {
+    color: #99E9F9;
   }
 
   .home figure
@@ -443,6 +450,23 @@ body
     width: 3em;
   }
 
+  .tonbou .sig
+  {
+    background-color: white;
+    color: #14C7EB;
+  }
+
+  .tonbou .sig:hover
+  {
+    color: white;
+    background-color: #14C7EB;
+    border: solid 1px white;
+  }
+
+  .tonbou .down
+  {
+    background-color: #14C7EB;
+  }
   /*end rules nav class home*/
 
 
@@ -1033,6 +1057,7 @@ body
     .trecen
     {
       height: 100vh;
+      margin-top: 3em;
     }
 
     .mac
