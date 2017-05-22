@@ -326,79 +326,322 @@ nav a, #navbarSupportedContent a
 
 
 
+  /*rules sana*/
 
+/*start of the page home*/
 
 
 
+  /*rules common*/
+  .torse
+  {
+    margin : 0;
+  }
+  /*end rules common*/
 
 
+  /*rules nav class home*/
+  .home
+  {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding-top: 2em;
+  }
 
+  .home article
+  {
+    width: auto;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .home li
+  {
+    list-style-type: none;
+    display: inline-block;
+  }
+
+  .home a
+  {
+    text-decoration: none;
+    margin-right: 2em;
+    color: white;
+    font-family: 'Avenir LT Std 65 Medium';
+    font-size: 20px;
+  }
+
+  .home a:hover
+  {
+    color: #99E9F9;
+  }
+
+  .home figure
+  {
+    width: 3em;
+  }
+
+  .tonbou .sig
+  {
+    background-color: white;
+    color: #14C7EB;
+  }
+
+  .tonbou .sig:hover
+  {
+    color: white;
+    background-color: #14C7EB;
+    border: solid 1px white;
+  }
+
+  .tonbou .down
+  {
+    background-color: #14C7EB;
+  }
+  /*end rules nav class home*/
+
+
+
+  /*start section class accueil  */
+  .accueil img
+  {
+    width: 100%;
+  }
+
+  .accueil
+  {
+
+    background: url(../img/home-alone.png)#14C7EB;
+    background-size: 140vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: white;
+
+  }
+
+
+
+  /*end section class accueil*/
+
+
+
+
+  /*start article class tonbou*/
+  .tonbou a
+  {
+    padding: 10px 25px;
+    border-radius: 30px 30px;
+    background-color: orange;
+  }
+  /*end article class tonbou*/
+
+
+
+
+  /*start article class fullscre*/
+  .fullscre
+  {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 7em;
+  }
+
+  .fullscre span
+  {
+    background-color: #14C7EB;
+    border: solid white 1px;
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  .fullscre p
+  {
+    margin-top: 2em;
+  }
+
+  .click
+  {
+    background-color: white;
+    width: 80%;
+    color: #878D96;
+  }
+
+ .click1
+  {
+    background-color: orange;
+    width: 80%;
+    color: white;
+  }
+
+.click1:hover
+{
+  background-color: #14C7EB;
+  color: white;
+  border-color: white;
+}
+
+  .click , .click1
+  {
+    padding: 10px 25px;
+    border-radius: 30px 30px;
+    margin-bottom: 1em;
+  }
+
+  .fullscre h1
+  {
+    font-size: 34px;
+  }
+
+  .fullscre h3
+  {
+    font-family: 'Avenir LT Std 35 Light';
+    font-size: 20px;
+  }
+
+  .fullscre h3 span
+  {
+    font-size: 12px;
+  }
+
+  .fullscre p
+  {
+    font-size: 17px;
+  }
+
+  .join .click
+  {
+    font-family: 'Avenir LT Std 45 Book';
+  }
+
+  .fullscre h1 , .fullscre p , .join .click1
+  {
+    font-family: 'Avenir LT Std 95 Black';
+  }
+  /*end article class fullscre*/
+
+
+/*start of the div class newsletter*/
+  .newsletter
+  {
+    background-color: #F6F9F9;
+    height: 160px;
+    padding: 1em;
+    padding-top: 2em;
+  }
+
+  .email hr
+  {
+    background-color: #18e2bf;
+    width: 90%;
+  }
+
+  .email input
+  {
+    border: none;
+    background-color: #F6F9F9;
+    color: #18e2bf;
+    font-size: 28px;
+    border-bottom : 2px solid #1FE2CB;
+    width: 90%;
+    font-family: 'Avenir LT Std 95 Black'
+  }
+
+  .email input:hover
+  {
+    font-size: 12px;
+    color: #B2D3D9;
+  }
+
+  .email
+  {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .newsletter p
+  {
+    color: #7c8a96;
+    font-family: 'Avenir LT Std 35 Light';
+    font-size: 16px;
+  }
+  /*end of the div class newsletter*/
+
+
+  /*rules div class appfoll*/
+ .foll
+ {
+   margin-right: 1em;
+   margin-top: 15px;
+ }
+
+  .foll a
+  {
+    color: #1FE2CB;
+    font-size: 14px;
+  }
+
+  .app ul
+  {
+    list-style-type: none;
+    font-family: 'Avenir LT Std 45 Book';
+    font-size: 17px;
+  }
+
+  .app ul :hover
+  {
+    border-bottom : 2px solid #1FE2CB;
+  }
+
+.app ul li a
+{
+  color: black;
+}
+
+.app li
+{
+  margin-top: 15px;
+}
+
+.appfoll
+{
+ display: flex;
+ justify-content: space-between;
+ padding-top: 3em;
+ padding-bottom: 3em;
+}
+
+.appfoll a
+{
+  text-decoration: none;
+}
+
+.foll p
+{
+  color: #7c8a96;
+  font-size: 12px;
+}
+
+.foll p , .foll a
+{
+  font-family: 'Avenir LT Std 45 Book';
+}
+/*end rules div class appfoll*/
+
+
+/*end of the page home*/
+
+
+
+
+
+
+
+/*rules page download*/
+
+
+/*rules section class download*/
+.download img
 /*start of section features ivan */
 .features
 {
@@ -411,6 +654,347 @@ nav a, #navbarSupportedContent a
 {
   width: 100%;
 }
+
+
+.download
+{
+  background-color: #00E7DA;
+  color: white;
+}
+/*end rules section class download*/
+
+
+/*rules article class trecen*/
+.trecen figure img
+{
+  height: 90px;
+  width: 90px;
+}
+
+.coming
+{
+  background-color: #99E9F9;
+  color: #00E7DA;
+  border-radius: 18px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-family: 'Avenir LT Std 95 Black';
+}
+
+.coming:hover
+{
+  color: #00E7DA;
+}
+
+.getit
+{
+  background-color: white;
+  color: #00E7DA;
+  border-radius: 18px;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  font-family: 'Avenir LT Std 95 Black';
+}
+
+.getit:hover
+{
+  color: white;
+  background-color: #00E7DA;
+  border: solid 1px white;
+}
+
+.windows , .mac , .beta , .android
+{
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 3em;
+  padding-top: 2em;
+}
+
+
+.windows h4 , .mac h4 , .beta h4 , .android h4
+{
+  margin-top: 2em;
+  font-family: 'Avenir LT Std 95 Black';
+  font-size: 20px;
+}
+
+.windows p , .mac p , .beta p , .android p
+{
+  font-family: 'Avenir LT Std 65 Medium';
+  font-size: 16px;
+}
+
+/*end rules article class trecen*/
+
+/*end rules page download*/
+
+
+
+@media (min-width:455px)
+{
+  /*rules page home*/
+
+  .accueil
+  {
+    height: 120vh;
+  }
+
+
+  .fullscre h1
+  {
+    font-size: 38px;
+  }
+
+  .fullscre h3
+  {
+    font-size: 24px;
+  }
+
+  .fullscre h3 span
+  {
+    font-size: 14px;
+  }
+
+  .fullscre p
+  {
+    font-size: 20px;
+  }
+
+  .email input
+  {
+    font-size: 32px;
+  }
+
+  .email input:hover
+  {
+    font-size: 15px;
+  }
+
+  .newsletter p
+  {
+    font-size: 19px;
+  }
+
+  .foll a
+  {
+    font-size: 16px;
+  }
+
+  .app ul
+  {
+    font-size: 20px;
+  }
+
+  .foll p
+  {
+    font-size: 14px;
+  }
+  /*end rules page home*/
+}
+
+
+
+
+@media (min-width:615px)
+{
+  /*rules page home*/
+
+
+/*rules section page accueil*/
+  .accueil
+  {
+    height: 100vh;
+  }
+  /*end rules section page accueil*/
+
+
+  /*rules div class foll*/
+  .foll
+  {
+    margin-right: 10em;
+  }
+  /*end rules div class foll*/
+
+
+/*rules article class fullscre*/
+.click
+{
+
+  width: 50%;
+}
+
+.click1
+{
+  width: 25%;
+}
+/*end rules article class fullscre*/
+
+.email input
+{
+  width: 50%;
+}
+
+
+  /*end rules page home*/
+}
+
+@media (min-width:768px)
+{
+  /*rules page download*/
+  .windows , .beta
+  {
+    border-right: 1px solid white;
+  }
+
+  .beta , .android
+  {
+    border-bottom: 0;
+  }
+  /*end rules page download*/
+}
+
+
+
+
+
+
+
+
+@media (min-width:900px)
+{
+  /*rules page home*/
+
+  /*rules common*/
+  .torse
+  {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  /*end rules common*/
+
+/*rules div class touts*/
+
+  .touts
+  {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .appfoll
+  {
+    flex-wrap: wrap;
+    width: 54%;
+    margin-left: 10px;
+  }
+
+  .newsletter
+  {
+    width: 45%;
+    height: auto;
+  }
+
+
+  .foll
+  {
+    width: 100%;
+    margin-left: 2em;
+  }
+
+  .newsletter
+  {
+    text-align: center;
+    padding-top: 4em;
+  }
+
+  .email input
+  {
+    width: 90%;
+  }
+  /*end rules div class touts*/
+
+
+/*rules font-size elements*/
+
+.fullscre h1
+{
+  font-size: 52px;
+}
+
+.fullscre h3
+{
+  font-size: 30px;
+}
+
+.fullscre h3 span
+{
+  font-size: 19px;
+}
+
+.fullscre p
+{
+  font-size: 21px;
+}
+
+.email input
+{
+  font-size: 32px;
+}
+
+.email input:hover
+{
+  font-size: 15px;
+}
+
+.newsletter p
+{
+  font-size: 26px;
+}
+
+.foll a
+{
+  font-size: 18px;
+}
+
+.app ul
+{
+  font-size: 22px;
+}
+
+.foll p
+{
+  font-size: 15px;
+}
+
+/*end rules font-size elements*/
+
+  /*end rules page home*/
+
+
+
+  @media (min-width:992px)
+  {
+    /*rules page download*/
+    .trecen
+    {
+      height: 100vh;
+      margin-top: 3em;
+    }
+
+    .mac
+    {
+      border-right: 1px solid white;
+    }
+
+    .windows , .mac
+    {
+      border-bottom: 0;
+    }
+    /*end rules page download*/
+  }
+
+  /*end rules sana*/
 
 .center
 {
@@ -444,7 +1028,6 @@ font-size: 22px;
 
 
 /*end of section features*/
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
