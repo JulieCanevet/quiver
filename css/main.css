@@ -105,7 +105,7 @@ margin:0;
 
 
 /* images font 100% de leur container */
-   .pricing img
+   .pricing img , .price img
    {
      width: 100%;
    }
@@ -665,6 +665,11 @@ nav a, #navbarSupportedContent a
 
 
 /*rules article class trecen*/
+.trecen
+{
+  margin-top: 4em;
+}
+
 .trecen figure img
 {
   height: 90px;
@@ -739,7 +744,6 @@ nav a, #navbarSupportedContent a
   {
     height: 120vh;
   }
-
 
   .fullscre h1
   {
@@ -877,6 +881,11 @@ nav a, #navbarSupportedContent a
     margin-left: 1em;
     margin-right: 1em;
   }
+
+  .trecen
+  {
+    margin-top: 4em;
+  }
   /*end rules common*/
 
 /*rules div class touts*/
@@ -887,12 +896,6 @@ nav a, #navbarSupportedContent a
     flex-direction: row-reverse;
   }
 
-  .appfoll
-  {
-    flex-wrap: wrap;
-    width: 54%;
-    margin-left: 10px;
-  }
 
   .newsletter
   {
@@ -900,10 +903,16 @@ nav a, #navbarSupportedContent a
     height: auto;
   }
 
+  .app
+  {
+    width: 40%;
+  }
+
+
 
   .foll
   {
-    width: 100%;
+    width: 40%;
     margin-left: 2em;
   }
 
