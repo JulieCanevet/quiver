@@ -179,143 +179,6 @@ nav
   display: none;
 }
 
-@media (min-width: 950px) {
-/* - - - - - - - - - PASSAGE NAV VERSION TABLETTE - - - - */
-/* ajout des marges au body */
-body
-{
-  margin-top: 1em;
-  margin-left: 1em;
-  margin-right: 1em;
-  }
-
-  nav
-  {
-    width: 100%;
-    height: 80px;
-    box-shadow: none;
-    flex-wrap: wrap;
-    background-color: transparent;
-  }
-
-.price
-{
-  position: relative;
-}
-  /* Liste à gauche de la barre */
-  #navbarSupportedContent
-  {
-    width: auto;
-  }
-
-/* Réglage des boutons à droite de la nav */
-.bouton
-{
-  display: flex;
-}
-.bouton a
-{
-  margin-right: 1em;
-}
-/* Liens de la bar de navigation */
-nav a, #navbarSupportedContent a
-{
-  color: white;
-}
-
-/* activation de la version tablette */
-  .tablette
-  {
-    display: flex;
-  }
-.mobile
-{
-  display: none;
-}
-/* FIN DE CE QU'IL FAUT RECUPERER POUR LA NAV */
-
-/* KING BONNES AFFAIRES */
-.king
-{
-  position: relative;
-  width: 650px;
-  margin: auto;
-  height: 420px;
-}
-/*Version mobile */
-.king figure
-{
-  display: none;
-}
-
-.corps
-{
-  position: absolute;
-  width: 370px;
-  height: 370px;
-  top:28px;
-  left: 142px;
-  background: url(../img/good_body.svg) no-repeat center;
-}
-
-.brasgauche, .brasdroit
-{
-  position: absolute;
-  width: 257px;
-  height: 64px;
-  top: 220px;
-}
-.brasgauche
-{
-  background: url(../img/good_left_bras.svg) no-repeat center;
-  left: 11px;
-}
-.brasdroit
-{
-  background: url(../img/good_right_bras.svg) no-repeat center;
-  right: 12px;
-}
-.tete
-{
-  position: absolute;
-  width: 151px;
-  height: 195px;
-  top: 2px;
-  left: 249px;
-  background: url(../img/good_head.svg) no-repeat center;
-}
-
-.caesar, .light
-{
-  display: flex;
-  width: 100%;
-}
-.caesar
-{
-  justify-content: center;
-}
-/*.caesar article, .caesar figure
-{
-  height: 649px;
-  min-height: 649px;
-  width: 50%;
-
-}*/
-.responds
-{
-  width: 50%;
-}
-.responds h2
-{
-  position: sticky;
-  top: .2em;
-}
- .responds ul
- {
-   position: sticky;
-   top: 9em;
- }
-}
 /* ------------------- SECTION PRIX ----------------- */
 .prix
 {
@@ -405,14 +268,33 @@ nav a, #navbarSupportedContent a
   color: #f79e02;
 }
 /* ------ CAROUSEL -------- */
-.carousel p
+.carousel-caption p
 {
   color: black;
-  padding-top: 2em;
+  font-size: 20px;
 }
 .carousel
 {
- height: 300px;
+ max-height: 300px;
+ margin-bottom: 2em;
+}
+
+/* CAROUSEL PARTIE JULIE */
+.tablette
+{
+  display: none;
+}
+.mobile
+{
+  display: flex;
+}
+
+/* Réglage des textes sur les photos carousel */
+.carousel-caption
+{
+  width: 75%;
+  margin: auto;
+  height: 80%;
 }
 /* -------------- DEBUT DE LA SECTION CAESAR ----------------- */
 
@@ -462,7 +344,7 @@ nav a, #navbarSupportedContent a
   width: 80%;
   margin: auto;
   text-align: center;
-  height:
+  margin-top: 2em;
 }
 
 /* SECTION KING */
@@ -557,6 +439,143 @@ footer
 {
   margin: auto;
   width: 90%;
+}
+
+/* ########## DEBUT DU MEDIA QUERIE ########### */
+@media (min-width: 950px) {
+/* - - - - - - - - - PASSAGE NAV VERSION TABLETTE - - - - */
+/* ajout des marges au body */
+body
+{
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  }
+
+  nav
+  {
+    width: 100%;
+    height: 80px;
+    box-shadow: none;
+    flex-wrap: wrap;
+    background-color: transparent;
+  }
+
+.price
+{
+  position: relative;
+}
+  /* Liste à gauche de la barre */
+  #navbarSupportedContent
+  {
+    width: auto;
+  }
+
+/* Réglage des boutons à droite de la nav */
+.bouton
+{
+  display: flex;
+}
+.bouton a
+{
+  margin-right: 1em;
+}
+/* Liens de la bar de navigation */
+nav a, #navbarSupportedContent a
+{
+  color: white;
+}
+
+/* activation de la version tablette */
+  .tablette
+  {
+    display: flex;
+  }
+.mobile
+{
+  display: none;
+}
+/* FIN DE CE QU'IL FAUT RECUPERER POUR LA NAV */
+
+/* KING BONNES AFFAIRES */
+.king
+{
+  position: relative;
+  width: 650px;
+  margin: auto;
+  height: 420px;
+}
+
+ /* - - - REGLAGE DE LA PARTIE ROUGE CAESAR - - - - - */
+.caesar, .light
+{
+  display: flex;
+  width: 100%;
+}
+.caesar
+{
+  max-height: 540px;
+}
+
+.caesar article
+{
+
+  width: 90%;
+  padding-top: 0;
+  line-height: 20px;
+}
+.caesar article p
+{
+  margin-top: 1.5em;
+}
+.caesar img
+{
+  max-height: 540px;
+}
+
+/* - - - - MISE EN FORME DU KING version tablette - - - - */
+.good 
+{
+display: flex;
+justify-content: space-around;
+width: 100%;
+align-items: center;
+flex-direction: row;
+}
+
+.good article
+{
+  width:28%;
+}
+
+.king figure
+{
+  width: 100%;
+  margin-top: 3em;
+}
+
+.profit
+{
+  display: flex;
+  flex-direction: column;
+}
+
+/* - - - - REGLAGE DES LISTES EN BAS DE PAGE - - - - - */
+.responds
+{
+  width: 50%;
+}
+.responds h2
+{
+  position: sticky;
+  top: .2em;
+}
+ .responds ul
+ {
+   position: sticky;
+   top: 9em;
+ }
+ 
 }
 
 /* ==========================================================================
