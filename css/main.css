@@ -465,7 +465,7 @@ body
 
   .tonbou .down
   {
-    background-color: #14C7EB;
+    background-color: transparent;
   }
   /*end rules nav class home*/
 
@@ -944,6 +944,11 @@ body
   /*rules page home*/
 
   /*rules common*/
+  .accueil
+  {
+    height: 120vh;
+  }
+
   .torse
   {
     margin-top: 1em;
