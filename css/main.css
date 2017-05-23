@@ -591,6 +591,7 @@ nav a, #navbarSupportedContent a
   .app ul :hover
   {
     border-bottom : 2px solid #1FE2CB;
+    width: 70px;
   }
 
 .app ul li a
