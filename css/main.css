@@ -869,6 +869,31 @@ footer
   margin: 2%;
 }
 
+.leftwhite,.rightwhite,.figurehomme,.righthomme
+{
+  width: 30%;
+}
+
+.lefthomme
+{
+  width: 48%;
+}
+
+.homme
+{
+  margin-right: 8%;
+}
+
+.lefttwo
+{
+  width: 80%;
+}
+
+.two
+{
+  margin-left: 8%
+}
+
 
 
 }
