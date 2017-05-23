@@ -94,14 +94,11 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-@media (min-width: 0px)  {
-  body
-  {
-margin:0;
+body
+{
+  font-family: 'Hind', sans-serif;
+  margin:0;
 }
-}
-
 
 
 /* images font 100% de leur container */
@@ -120,8 +117,7 @@ margin:0;
   justify-content: space-between;
   position: fixed;
   top: 0;
-  right: 10px;
-  left: 5px;
+  z-index: 1;
 }
 
 nav
@@ -133,6 +129,7 @@ nav
   align-items: baseline;
   background-color: white;
   flex-wrap: wrap;
+
 }
 
 /* Reglage de la liste à gauche de la nav */
@@ -150,6 +147,7 @@ nav
   padding: 10px 25px;
   border-radius: 30px 30px;
   background-color: orange;
+  color: white;
 }
 
 /* container du logo Quiver */
@@ -175,7 +173,7 @@ nav
   margin: auto;
   display: flex;
   flex-direction: column;
-  margin-top: 2em;
+  margin-top: 5em;
 }
 
 .centre p
@@ -188,8 +186,397 @@ nav
   display: none;
 }
 
+/* ------------------- SECTION PRIX ----------------- */
+.prix
+{
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+  margin-bottom: 0;
+  flex-wrap: wrap;
+  background-color: #F6F9F9;
+}
+
+.info
+{
+  margin: 20px 0;
+  padding: 0 20px;
+  max-width: 350px;
+}
+.info ul
+{
+  list-style: none;
+  line-height: 4em;
+}
+
+/* Bouton "view details" */
+.info p a 
+{
+  width: 310px;
+  height: 54px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-color: transparent;
+  padding-top: 15px;
+  padding-left: 110px;
+  background-color: #C8CDD6;
+  color: #3B4ECC;
+}
+
+.info p a:hover
+{
+  background-color: #C8CDD6;
+  color: #3B4ECC;
+  border-color: transparent;
+}
+
+
+.top
+{
+  text-align: center;
+  height: 300px;
+  min-height: 300px;
+  border-radius: 4px 4px 0 0;
+  color: white;
+}
+
+.top h2
+{
+  margin-top: 60px;
+  font-size: 4em;
+  margin-bottom: 50px;
+}
+
+.top a
+{
+  border: 2px solid white;
+  border-radius: 30px 30px;
+  color: white;
+  padding: 10px 25px;
+  text-decoration: none;
+}
+.down
+{
+  padding: 35px 30px;
+  border-radius: 0 0 4px 4px;
+  vertical-align: baseline;
+  color: #7c8a96;
+  background-color: white;
+  flex-direction: column;
+}
+.card
+{
+  border-color: transparent;
+}
+.prix .btn 
+{
+border-top-right-radius: 0px;
+border-top-left-radius: 0px;
+border-bottom-right-radius: 6px;
+border-bottom-left-radius: 6px;
+}
+
+.gris, .gris a
+{
+  background-color: #dae1eb;
+  color: #3b4ecc;
+  border-color: #3b4ecc; 
+}
+.gris a:hover
+{
+  background-color: #3b4ecc;
+  color: white;
+  text-decoration: none;
+}
+
+.bleu
+{
+  background-color: #6d98e6;
+}
+.bleu a:hover
+{
+  color: #6d98e6;
+  background-color: white;
+  border-color: white;
+}
+
+.marine
+{
+  background-color: #3b4ecc;
+}
+.marine a:hover
+{
+  color: #3b4ecc;
+  background-color: white;
+  border-color: white;
+}
+
+.orange
+{
+  background-color: #f79e02;
+}
+.orange h3
+{
+  color: #FBCF81;
+  font-size: 17px;
+  padding-bottom: 2.8em;
+  margin-top: 3em;
+}
+
+.orange a:hover
+{
+  color: #f79e02;
+  background-color: white;
+  border-color: white;
+}
+
+/* Titres dans l'ordre des ul de presentation des prix */
+.titre1
+{
+  color: #91a4bf;
+}
+.titre2
+{
+  color: #6d98e6;
+}
+
+.titre3
+{
+  color: #3b4ecc;
+}
+
+.titre4
+{
+  color: #f79e02;
+}
+
+/* Degrade des listes de prix*/
+.clair1
+{
+  color: #C1C8CD;
+}
+
+.clair2
+{
+  color: #CBD1D6;
+}
+
+.clair3
+{
+  color: #D5D9DD;
+}
+
+.clair4
+{
+  color: #DFE2E5;
+}
+
+
+/* ------ CAROUSEL -------- */
+/* Paragraphe du carousel */
+.carousel-caption p
+{
+  color: black;
+  font-size: 20px;
+  margin-top: 1.8em;
+}
+
+/* Taille du carousel */
+.carousel
+{
+  max-height: 550px;
+ min-height: 530px;
+ margin-top: 0;
+}
+
+/* Image du carousel */
+.carousel .img-fluid
+{
+  width: 100%;
+  height: 530px;
+}
+
+/* CAROUSEL PARTIE JULIE */
+.tablette
+{
+  display: none;
+}
+.mobile
+{
+  display: flex;
+}
+
+/* Réglage des textes sur les photos carousel */
+.carousel-caption
+{
+  width: 75%;
+  margin: auto;
+  height: 80%;
+  font-family: 'Stardos Stencil', cursive;
+}
+/* -------------- DEBUT DE LA SECTION CAESAR ----------------- */
+
+.caesar figure
+{
+  width: 100%;
+  margin: 0;
+}
+.caesar img
+{
+  width: 100%;
+  z-index: -1;
+}
+
+/* Reglage du titre sur la photo caesar */
+.caesar figure h3
+{
+  position: absolute;
+  z-index: 0;
+  color: white;
+  text-align: center;
+  padding-top: 30%;
+  padding-left: 15%;
+  font-size: 4.5em;
+  line-height: 1.5em;
+  font-family: 'Stardos Stencil', cursive;
+}
+
+.caesar article
+{
+  background-image: linear-gradient(#F2403B, #EF4727);
+  padding: 4em;
+  color: white;
+}
+.caesar article h2
+{
+  margin-top: 2em;
+}
+
+.caesar article p
+{
+  margin-top: 4em;
+}
+
+/* SECTION GOOD */
+.good
+{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 2em;
+}
+
+/* SECTION KING */
+
+.king figure
+{
+  width: 100%;
+}
+
+/* Icones profit et université */
+.profit
+{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* reglage des lien "contact us"*/
+.ctc
+{
+  color: orange;
+}
+
+/* Fond gris bas de page */
+.light
+{
+  background-color: #F6F9F9;
+  margin: 0;
+}
+
+/* Section liste principale */
+.responds
+{
+  text-align: center;
+  line-height: 3em;
+}
+.responds h2
+{
+  line-height: 0;
+  margin-bottom: 1em;
+}
+.responds h2 img
+{
+  margin-bottom: 30px;
+}
+.responds h2, .started h2
+{
+  text-align: center;
+  color: #18e2bf;
+  padding-top: 1em;
+  padding-bottom: .75em;
+}
+.responds ul
+{
+  list-style: none;
+}
+.responds li a
+{
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+}
+.responds li a:hover, .responds li a:active
+{
+  border: 2px solid #18e2bf;
+  color: #18e2bf;
+  padding: 10px 25px;
+  border-radius: 30px 30px;
+}
+
+/* Section listes secondaires */
+.started
+{
+  width: 95%;
+  margin: auto;
+}
+
+.started ul
+{
+  margin-top: 2em;
+}
+.started li
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.started i
+{
+  color: grey;
+}
+
+.started li:hover, .started li:hover i
+{
+  color: #18e2bf;
+}
+
+footer
+{
+  margin: auto;
+  width: 90%;
+}
+
+/* ########## DEBUT DU MEDIA QUERIE ########### */
 @media (min-width: 950px) {
 /* - - - - - - - - - PASSAGE NAV VERSION TABLETTE - - - - */
+/* ajout des marges au body */
+body
+{
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  }
+
   nav
   {
     width: 100%;
@@ -234,96 +621,95 @@ nav a, #navbarSupportedContent a
   display: none;
 }
 /* FIN DE CE QU'IL FAUT RECUPERER POUR LA NAV */
+
+/* KING BONNES AFFAIRES */
+.king
+{
+  position: relative;
+  width: 650px;
+  margin: auto;
+  height: 420px;
 }
-/* ------------------- SECTION PRIX ----------------- */
-.prix
+
+ /* - - - REGLAGE DE LA PARTIE ROUGE CAESAR - - - - - */
+.caesar, .light
 {
   display: flex;
-  justify-content: center;
-  margin: 50px auto 50px auto;
-  flex-wrap: wrap;
-  background-color: #F6F9F9;
+  width: 100%;
 }
-.info
+.caesar
 {
-  margin: 20px 0;
-  padding: 0 20px;
-  max-width: 350px;
-}
-.info ul
-{
-  list-style: none;
-  line-height: 4em;
+  max-height: 540px;
 }
 
-.top
+.caesar article
 {
-  text-align: center;
-  height: 300px;
-  min-height: 300px;
-  border-radius: 4px 4px 0 0;
-  color: white;
+
+  width: 90%;
+  padding-top: 0;
+  line-height: 20px;
+}
+.caesar article p
+{
+  margin-top: 1.5em;
+}
+.caesar img
+{
+  max-height: 540px;
+}
+.caesar figure h3
+{
+  padding-top: 20%;
+  padding-left: 8.5%;
+  font-size: 3em;
+  line-height: 1.3em;
+  font-family: 'Stardos Stencil', cursive;
 }
 
-.top h2
+/* - - - - MISE EN FORME DU KING version tablette - - - - */
+.good 
 {
-  margin-top: 60px;
-  font-size: 5em;
-  margin-bottom: 50px;
-}
-.top a
-{
-  border: 2px solid white;
-  border-radius: 30px 30px;
-  color: white;
-  padding: 10px 25px;
-}
-.down
-{
-  padding: 35px 30px;
-  border-radius: 0 0 4px 4px;
-  vertical-align: baseline;
-  color: #7c8a96;
-  background-color: white;
+display: flex;
+justify-content: space-around;
+width: 100%;
+align-items: center;
+flex-direction: row;
 }
 
-.gris
+.good article
 {
-  background-color: #dae1eb;
-  color: #3b4ecc;
-}
-.bleu
-{
-  background-color: #6d98e6;
+  width:28%;
 }
 
-.marine
+.king figure
 {
-  background-color: #3b4ecc;
-}
-.orange
-{
-  background-color: #f79e02;
-}
-.titre1
-{
-  color: #91a4bf;
-}
-.titre2
-{
-  color: #6d98e6;
+  width: 100%;
+  margin-top: 3em;
 }
 
-.titre3
+.profit
 {
-  color: #3b4ecc;
+  display: flex;
+  flex-direction: column;
 }
 
-.titre4
+/* - - - - REGLAGE DES LISTES EN BAS DE PAGE - - - - - */
+.responds
 {
-  color: #f79e02;
+  width: 50%;
 }
-
+.responds h2
+{
+  position: sticky;
+  top: .2em;
+}
+ .responds ul
+ {
+   position: sticky;
+   top: 9em;
+ }
+ 
+}
 
 
   /*rules sana*/
