@@ -497,7 +497,7 @@ nav a, #navbarSupportedContent a
 
 /*ivan commun rules*/
 
-.whiteivan h3, .blackivan h3, .two h3 , .homme h3
+.whiteivan h3, .blackivan h3, .two h3 , .homme h3,.blackivan2 h3
 {
   font-size: 20px;
   color: #36454e;
@@ -506,7 +506,7 @@ nav a, #navbarSupportedContent a
 
 }
 
-.whiteivan p, .blackivan p, .two p , .homme p
+.whiteivan p, .blackivan p, .two p , .homme p,.blackivan2 p
 {
   color: #7c8a96;
   font-size: 20px;
@@ -519,17 +519,17 @@ svg
   height: 100px;
 }
 
-.blackivan
+.blackivan,.blackivan2
 {
   background-color: rgb(40,43,51);
 }
 
-.blackivan img, .homme img
+.blackivan img, .homme img,.blackivan2 img
 {
   width: 90%;
 }
 
-.blackivan h3,.righttwo h3,.righttwo p,.rightblack p
+.blackivan h3,.righttwo h3,.righttwo p,.rightblack p,.blackivan2 h3
 {
   color: white;
 }
@@ -726,12 +726,12 @@ footer
 
   /*start of black ivan*/
 
-  .blackivan
+  .blackivan,.blackivan2
   {
     width: 100%;
   }
 
-  .blackivan img
+  .blackivan img,.blackivan2 img
   {
     width: 100%;
   }
@@ -753,12 +753,12 @@ footer
 @media (min-width:980px) {
 
 
-.whiteivan,.blackivan,.two,.homme
+.whiteivan,.blackivan,.two,.homme,.blackivan2
 {
   display: flex;
 }
 
-.figureivan img,.blackivan img
+.figureivan img,.blackivan img,.blackivan2 img
 {
   width: 400px;
 }
@@ -779,6 +779,11 @@ footer
 
 @media (min-width:1280px) {
 
+  body
+  {
+    margin: 1%;
+  }
+
 
 
   .features
@@ -789,6 +794,12 @@ footer
   .center
   {
     margin-top: 0;
+  }
+
+  .center h1
+  {
+    font-size: 70px;
+    font-family: 'Avenir LT Std 35 Light';
   }
 
   .tel img
@@ -836,6 +847,26 @@ footer
  .email input
  {
    width: 90%;
+}
+
+.whiteivan,.blackivan,.two,.homme
+{
+  margin-top: 10%;
+}
+
+.blackivan img,.figurehomme img,.blackivan2 img
+{
+  width: 750px;
+}
+
+.lefttwo
+{
+  width: 100%;
+}
+
+.marge
+{
+  margin: 2%;
 }
 
 
