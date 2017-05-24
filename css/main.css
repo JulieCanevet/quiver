@@ -496,6 +496,7 @@ border-bottom-left-radius: 6px;
 {
   text-align: center;
   line-height: 3em;
+
 }
 .responds h2
 {
@@ -523,7 +524,7 @@ border-bottom-left-radius: 6px;
   color: grey;
   font-weight: bold;
 }
-.responds li a:hover, .responds li a:active
+.responds li a:hover, .responds li a:focus
 {
   border: 2px solid #18e2bf;
   color: #18e2bf;
@@ -668,15 +669,18 @@ nav a, #navbarSupportedContent a
 .good 
 {
 display: flex;
-justify-content: space-around;
 width: 100%;
 align-items: center;
-flex-direction: row;
+margin-bottom: 2em;
 }
 
-.good article
+.causes, .profit
 {
-  width:28%;
+  width: 20%;
+}
+.causes 
+{
+  text-align: left;
 }
 
 .king figure
@@ -685,10 +689,16 @@ flex-direction: row;
   margin-top: 3em;
 }
 
+.king figure img
+{
+  width: 100%;
+}
+
 .profit
 {
   display: flex;
   flex-direction: column;
+
 }
 
 /* - - - - REGLAGE DES LISTES EN BAS DE PAGE - - - - - */
@@ -696,18 +706,121 @@ flex-direction: row;
 {
   width: 50%;
 }
-.responds h2
+.responds
 {
   position: sticky;
-  top: .2em;
+  top: 0;
+  height: 35em;
 }
- .responds ul
+}
+
+
+/*start of the div class newsletter*/
+  .newsletter
+  {
+    background-color: #F6F9F9;
+    height: 160px;
+    padding: 1em;
+    padding-top: 2em;
+  }
+
+  .email hr
+  {
+    background-color: #18e2bf;
+    width: 90%;
+  }
+
+  .email input
+  {
+    border: none;
+    background-color: #F6F9F9;
+    color: #18e2bf;
+    font-size: 28px;
+    border-bottom : 2px solid #1FE2CB;
+    width: 90%;
+    font-family: 'Avenir LT Std 95 Black'
+  }
+
+  .email input:hover
+  {
+    font-size: 12px;
+    color: #B2D3D9;
+  }
+
+  .email
+  {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .newsletter p
+  {
+    color: #7c8a96;
+    font-family: 'Avenir LT Std 35 Light';
+    font-size: 16px;
+  }
+  /*end of the div class newsletter*/
+
+
+  /*rules div class appfoll*/
+ .foll
  {
-   position: sticky;
-   top: 9em;
+   margin-right: 1em;
+   margin-top: 15px;
  }
- 
+
+  .foll a
+  {
+    color: #1FE2CB;
+    font-size: 14px;
+  }
+
+  .app ul
+  {
+    list-style-type: none;
+    font-family: 'Avenir LT Std 45 Book';
+    font-size: 17px;
+  }
+
+  .app ul :hover
+  {
+    border-bottom : 2px solid #1FE2CB;
+  }
+
+.app ul li a
+{
+  color: black;
 }
+
+.app li
+{
+  margin-top: 15px;
+}
+
+.appfoll
+{
+ display: flex;
+ justify-content: space-between;
+ padding-top: 3em;
+ padding-bottom: 3em;
+}
+
+.appfoll a
+{
+  text-decoration: none;
+}
+
+.foll p
+{
+  color: #7c8a96;
+  font-size: 12px;
+}
+
+.foll p , .foll a
+{
+  font-family: 'Avenir LT Std 45 Book';
+}
+/*end rules div class appfoll*/
 
 /* ==========================================================================
    Helper classes
