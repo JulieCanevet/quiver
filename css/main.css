@@ -102,7 +102,7 @@ body
 
 
 /* images font 100% de leur container */
-   .pricing img
+   .pricing img , .price img
    {
      width: 100%;
    }
@@ -780,7 +780,7 @@ flex-direction: row;
 
   .tonbou .down
   {
-    background-color: #14C7EB;
+    background-color: transparent;
   }
   /*end rules nav class home*/
 
@@ -977,6 +977,7 @@ flex-direction: row;
   .app ul :hover
   {
     border-bottom : 2px solid #1FE2CB;
+    width: 70px;
   }
 
 .app ul li a
@@ -1051,6 +1052,11 @@ flex-direction: row;
 
 
 /*rules article class trecen*/
+.trecen
+{
+  margin-top: 4em;
+}
+
 .trecen figure img
 {
   height: 90px;
@@ -1125,7 +1131,6 @@ flex-direction: row;
   {
     height: 120vh;
   }
-
 
   .fullscre h1
   {
@@ -1252,11 +1257,21 @@ flex-direction: row;
   /*rules page home*/
 
   /*rules common*/
+  .accueil
+  {
+    height: 120vh;
+  }
+
   .torse
   {
     margin-top: 1em;
     margin-left: 1em;
     margin-right: 1em;
+  }
+
+  .trecen
+  {
+    margin-top: 4em;
   }
   /*end rules common*/
 
@@ -1268,12 +1283,6 @@ flex-direction: row;
     flex-direction: row-reverse;
   }
 
-  .appfoll
-  {
-    flex-wrap: wrap;
-    width: 54%;
-    margin-left: 10px;
-  }
 
   .newsletter
   {
@@ -1281,10 +1290,16 @@ flex-direction: row;
     height: auto;
   }
 
+  .app
+  {
+    width: 40%;
+  }
+
+
 
   .foll
   {
-    width: 100%;
+    width: 40%;
     margin-left: 2em;
   }
 
