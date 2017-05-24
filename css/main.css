@@ -609,10 +609,12 @@ border-bottom-left-radius: 6px;
 {
   line-height: 0;
   margin-bottom: 1em;
+   margin-top: 0;
 }
 .responds h2 img
 {
   margin-bottom: 30px;
+  margin-top: 0;
 }
 .responds h2, .started h2
 {
