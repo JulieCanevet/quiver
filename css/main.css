@@ -94,10 +94,6 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-body
-{
-  margin:0;
-}
 
 /* images font 100% de leur container */
    .pricing img , .price img
@@ -293,53 +289,6 @@ nav
 /*end rules div class appfoll*/
 
 
-@media (min-width: 950px) {
-/* - - - - - - - - - PASSAGE NAV VERSION TABLETTE - - - - */
-  nav
-  {
-    width: 100%;
-    height: 80px;
-    box-shadow: none;
-    flex-wrap: wrap;
-    background-color: transparent;
-  }
-
-.price
-{
-  position: relative;
-}
-  /* Liste à gauche de la barre */
-  #navbarSupportedContent
-  {
-    width: auto;
-  }
-
-/* Réglage des boutons à droite de la nav */
-.bouton
-{
-  display: flex;
-}
-.bouton a
-{
-  margin-right: 1em;
-}
-/* Liens de la bar de navigation */
-nav a, #navbarSupportedContent a
-{
-  color: white;
-}
-
-/* activation de la version tablette */
-  .tablette
-  {
-    display: flex;
-  }
-.mobile
-{
-  display: none;
-}
-/* FIN DE CE QU'IL FAUT RECUPERER POUR LA NAV */
-}
 
 /* ------------------- SECTION PRIX ----------------- */
 .prix
@@ -788,12 +737,6 @@ svg
   color: #18e2bf;
 }
 
-footer
-{
-  margin: auto;
-  width: 90%;
-}
-
 /*start of div tel*/
 .tel
 {
@@ -838,6 +781,8 @@ footer
 {
   display: flex;
   flex-direction: column-reverse;
+  margin: auto;
+  width: 90%;
 }
 
 .rightfooter h3
@@ -995,7 +940,7 @@ footer
     width: 54%;
     margin-left: 10px;
 }
-
+}
 
 /* ########## DEBUT DU MEDIA QUERIE ########### */
 @media (min-width: 950px) {
@@ -1145,8 +1090,9 @@ margin-bottom: 2em;
   height: 35em;
 }
 }
-  /*rules sana*/
+/* FIN DU MEDIA QUERIE */
 
+  /*rules sana*/
 /*start of the page home*/
 
   /*rules common*/
@@ -1729,7 +1675,53 @@ margin-bottom: 2em;
 
   /*end rules page home*/
 
+@media (min-width: 950px) {
+/* - - - - - - - - - PASSAGE NAV VERSION TABLETTE - - - - */
+  nav
+  {
+    width: 100%;
+    height: 80px;
+    box-shadow: none;
+    flex-wrap: wrap;
+    background-color: transparent;
+  }
 
+.price
+{
+  position: relative;
+}
+  /* Liste à gauche de la barre */
+  #navbarSupportedContent
+  {
+    width: auto;
+  }
+
+/* Réglage des boutons à droite de la nav */
+.bouton
+{
+  display: flex;
+}
+.bouton a
+{
+  margin-right: 1em;
+}
+/* Liens de la bar de navigation */
+nav a, #navbarSupportedContent a
+{
+  color: white;
+}
+
+/* activation de la version tablette */
+  .tablette
+  {
+    display: flex;
+  }
+.mobile
+{
+  display: none;
+}
+/* FIN DE CE QU'IL FAUT RECUPERER POUR LA NAV */
+}
 
   @media (min-width:992px)
   {
