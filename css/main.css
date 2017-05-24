@@ -96,10 +96,8 @@ textarea {
    ========================================================================== */
 body
 {
-  font-family: 'Hind', sans-serif;
   margin:0;
 }
-
 
 /* images font 100% de leur container */
    .pricing img , .price img
@@ -184,6 +182,163 @@ nav
 .tablette
 {
   display: none;
+}
+
+
+/*start of the div class newsletter*/
+  .newsletter
+  {
+    background-color: #F6F9F9;
+    height: 160px;
+    padding: 1em;
+    padding-top: 2em;
+  }
+
+  .email hr
+  {
+    background-color: #18e2bf;
+    width: 90%;
+  }
+
+  .email input
+  {
+    border: none;
+    background-color: #F6F9F9;
+    color: #18e2bf;
+    font-size: 28px;
+    border-bottom : 2px solid #1FE2CB;
+    width: 90%;
+    font-family: 'Avenir LT Std 95 Black'
+  }
+
+  .email input:hover
+  {
+    font-size: 12px;
+    color: #B2D3D9;
+  }
+
+  .email
+  {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .newsletter p
+  {
+    color: #7c8a96;
+    font-family: 'Avenir LT Std 35 Light';
+    font-size: 16px;
+  }
+  /*end of the div class newsletter*/
+
+
+  /*rules div class appfoll*/
+ .foll
+ {
+   margin-right: 1em;
+   margin-top: 15px;
+ }
+
+  .foll a
+  {
+    color: #1FE2CB;
+    font-size: 14px;
+  }
+
+  .app ul
+  {
+    list-style-type: none;
+    font-family: 'Avenir LT Std 45 Book';
+    font-size: 17px;
+  }
+
+  .app ul :hover
+  {
+    border-bottom : 2px solid #1FE2CB;
+  }
+
+.app ul li a
+{
+  color: black;
+}
+
+.app li
+{
+  margin-top: 15px;
+}
+
+.appfoll
+{
+ display: flex;
+ justify-content: space-between;
+ padding-top: 3em;
+ padding-bottom: 3em;
+}
+
+.appfoll a
+{
+  text-decoration: none;
+}
+
+.foll p
+{
+  color: #7c8a96;
+  font-size: 12px;
+}
+
+.foll p , .foll a
+{
+  font-family: 'Avenir LT Std 45 Book';
+}
+/*end rules div class appfoll*/
+
+
+@media (min-width: 950px) {
+/* - - - - - - - - - PASSAGE NAV VERSION TABLETTE - - - - */
+  nav
+  {
+    width: 100%;
+    height: 80px;
+    box-shadow: none;
+    flex-wrap: wrap;
+    background-color: transparent;
+  }
+
+.price
+{
+  position: relative;
+}
+  /* Liste à gauche de la barre */
+  #navbarSupportedContent
+  {
+    width: auto;
+  }
+
+/* Réglage des boutons à droite de la nav */
+.bouton
+{
+  display: flex;
+}
+.bouton a
+{
+  margin-right: 1em;
+}
+/* Liens de la bar de navigation */
+nav a, #navbarSupportedContent a
+{
+  color: white;
+}
+
+/* activation de la version tablette */
+  .tablette
+  {
+    display: flex;
+  }
+.mobile
+{
+  display: none;
+}
+/* FIN DE CE QU'IL FAUT RECUPERER POUR LA NAV */
 }
 
 /* ------------------- SECTION PRIX ----------------- */
@@ -498,7 +653,70 @@ border-bottom-left-radius: 6px;
 {
   text-align: center;
   line-height: 3em;
+}
 
+/*ivan commun rules*/
+
+.whiteivan h3, .blackivan h3, .two h3 , .homme h3,.blackivan2 h3
+{
+  font-size: 20px;
+  color: #36454e;
+  margin-bottom: 40px;
+  font-family: 'Avenir LT Std 35 Light';
+}
+
+.whiteivan p, .blackivan p, .two p , .homme p,.blackivan2 p
+{
+  color: #7c8a96;
+  font-size: 20px;
+  font-family: 'Avenir LT Std 45 Book';
+}
+
+svg
+{
+  height: 100px;
+}
+
+.blackivan,.blackivan2
+{
+  background-color: rgb(40,43,51);
+}
+
+.blackivan img, .homme img,.blackivan2 img
+{
+  width: 90%;
+}
+
+.blackivan h3,.righttwo h3,.righttwo p,.rightblack p,.blackivan2 h3
+{
+  color: white;
+}
+
+.lefthomme, .righttwo
+{
+  background-image: linear-gradient(#F63A4F,#F14430);
+}
+
+.lefthomme h3
+{
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.rightblack h3
+{
+  font-size: 25px;
+  text-align: center;
+}
+
+/*end commun rules*/
+/*start of section features ivan */
+.features
+{
+  height: 75vh;
+  background-image: linear-gradient(#F63A4F,#F14430);
 }
 .responds h2
 {
@@ -512,20 +730,29 @@ border-bottom-left-radius: 6px;
 .responds h2, .started h2
 {
   text-align: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25%;
   color: #18e2bf;
   padding-top: 1em;
   padding-bottom: .75em;
 }
 .responds ul
 {
+  font-size: 40px;
+  color: white;
   list-style: none;
 }
 .responds li a
 {
+  font-size: 22px;
+  color: white;
   text-decoration: none;
   color: grey;
   font-weight: bold;
 }
+
 .responds li a:hover, .responds li a:focus
 {
   border: 2px solid #18e2bf;
@@ -566,6 +793,209 @@ footer
   margin: auto;
   width: 90%;
 }
+
+/*start of div tel*/
+.tel
+{
+ margin-top: 40px;
+}
+
+.vignets
+{
+  margin-left: 49%;
+}
+
+.vignets {
+   display:none;
+     }
+
+.imageordi
+{
+  display: none;
+}
+/*end of div tel*/
+
+
+/*start of ul social resaux*/
+
+.socialreseau
+{
+  width: 200px;
+  margin-bottom: 18%;
+}
+
+.socialreseau ul
+{
+  list-style: none;
+}
+
+
+/*end of ul social resaux*/
+
+/*start of footer rules*/
+
+footer
+{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.rightfooter h3
+{
+  color: #7c8a96;
+  text-align: center;
+  font-size: 20px;
+}
+
+.about
+{
+  display: flex;
+  font-family: 'Avenir LT Std 45 Book';
+  justify-content: space-between;
+}
+
+.follow
+{
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  width: 50%;
+}
+
+.about ul
+{
+  list-style:none;
+}
+
+.follow span
+{
+  color: rgb(81,245,249);
+}
+
+
+/*end of footer rules*/
+
+/*------------start of media query tablette-------------*/
+
+@media (min-width:768px) {
+
+/*section of features*/
+  .center
+  {
+    margin-top: 10%;
+  }
+
+  .imageordi img
+  {
+    width: 1000px;
+  }
+
+.tel .vignet
+{
+  width: 150px;
+}
+  /*end section of features*/
+
+  /*start of black ivan*/
+
+  .blackivan,.blackivan2
+  {
+    width: 100%;
+  }
+
+  .blackivan img,.blackivan2 img
+  {
+    width: 100%;
+  }
+
+  .tel img
+  {
+    width: 150px;
+  }
+
+.ordinateur img
+{
+  width: 700px;
+}
+  /*end of black ivan*/
+
+}
+
+/*------------end of media query tablette-------------*/
+
+
+
+/*---------------------start of media query 980px----------------------------*/
+
+@media (min-width:980px) {
+
+
+.whiteivan,.blackivan,.two,.homme,.blackivan2
+{
+  display: flex;
+}
+
+.figureivan img,.blackivan img,.blackivan2 img
+{
+  width: 400px;
+}
+
+.whiteivan
+{
+  width: 100%;
+}
+}
+
+/*----------------------end of media query 980px-----------------------------*/
+
+/*start of media query 1280*/
+
+@media (min-width:1280px) {
+
+  body
+  {
+    margin: 1%;
+  }
+
+  .features
+  {
+    height: 100vh;
+  }
+
+  .center
+  {
+    margin-top: 0;
+  }
+
+  .center h1
+  {
+    font-size: 70px;
+    font-family: 'Avenir LT Std 35 Light';
+  }
+
+  .tel img
+  {
+    width: 250px;
+  }
+
+  .ordinateur img
+  {
+  width: 1000px;
+  }
+
+  .touts
+ {
+   display: flex;
+   flex-direction: row-reverse;
+}
+
+.appfoll
+  {
+
+    width: 54%;
+    margin-left: 10px;
+}
+
 
 /* ########## DEBUT DU MEDIA QUERIE ########### */
 @media (min-width: 950px) {
@@ -715,121 +1145,9 @@ margin-bottom: 2em;
   height: 35em;
 }
 }
-
-
-/*start of the div class newsletter*/
-  .newsletter
-  {
-    background-color: #F6F9F9;
-    height: 160px;
-    padding: 1em;
-    padding-top: 2em;
-  }
-
-  .email hr
-  {
-    background-color: #18e2bf;
-    width: 90%;
-  }
-
-  .email input
-  {
-    border: none;
-    background-color: #F6F9F9;
-    color: #18e2bf;
-    font-size: 28px;
-    border-bottom : 2px solid #1FE2CB;
-    width: 90%;
-    font-family: 'Avenir LT Std 95 Black'
-  }
-
-  .email input:hover
-  {
-    font-size: 12px;
-    color: #B2D3D9;
-  }
-
-  .email
-  {
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-
-  .newsletter p
-  {
-    color: #7c8a96;
-    font-family: 'Avenir LT Std 35 Light';
-    font-size: 16px;
-  }
-  /*end of the div class newsletter*/
-
-
-  /*rules div class appfoll*/
- .foll
- {
-   margin-right: 1em;
-   margin-top: 15px;
- }
-
-  .foll a
-  {
-    color: #1FE2CB;
-    font-size: 14px;
-  }
-
-  .app ul
-  {
-    list-style-type: none;
-    font-family: 'Avenir LT Std 45 Book';
-    font-size: 17px;
-  }
-
-  .app ul :hover
-  {
-    border-bottom : 2px solid #1FE2CB;
-  }
-
-.app ul li a
-{
-  color: black;
-}
-
-.app li
-{
-  margin-top: 15px;
-}
-
-.appfoll
-{
- display: flex;
- justify-content: space-between;
- padding-top: 3em;
- padding-bottom: 3em;
-}
-
-.appfoll a
-{
-  text-decoration: none;
-}
-
-.foll p
-{
-  color: #7c8a96;
-  font-size: 12px;
-}
-
-.foll p , .foll a
-{
-  font-family: 'Avenir LT Std 45 Book';
-}
-/*end rules div class appfoll*/
-
-
   /*rules sana*/
 
 /*start of the page home*/
-
-
 
   /*rules common*/
   .torse
@@ -915,13 +1233,7 @@ margin-bottom: 2em;
     color: white;
 
   }
-
-
-
   /*end section class accueil*/
-
-
-
 
   /*start article class tonbou*/
   .tonbou a
@@ -931,9 +1243,6 @@ margin-bottom: 2em;
     background-color: orange;
   }
   /*end article class tonbou*/
-
-
-
 
   /*start article class fullscre*/
   .fullscre
@@ -1019,127 +1328,9 @@ margin-bottom: 2em;
   }
   /*end article class fullscre*/
 
-
-/*start of the div class newsletter*/
-  .newsletter
-  {
-    background-color: #F6F9F9;
-    height: 160px;
-    padding: 1em;
-    padding-top: 2em;
-  }
-
-  .email hr
-  {
-    background-color: #18e2bf;
-    width: 90%;
-  }
-
-  .email input
-  {
-    border: none;
-    background-color: #F6F9F9;
-    color: #18e2bf;
-    font-size: 28px;
-    border-bottom : 2px solid #1FE2CB;
-    width: 90%;
-    font-family: 'Avenir LT Std 95 Black'
-  }
-
-  .email input:hover
-  {
-    font-size: 12px;
-    color: #B2D3D9;
-  }
-
-  .email
-  {
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-
-  .newsletter p
-  {
-    color: #7c8a96;
-    font-family: 'Avenir LT Std 35 Light';
-    font-size: 16px;
-  }
-  /*end of the div class newsletter*/
-
-
-  /*rules div class appfoll*/
- .foll
- {
-   margin-right: 1em;
-   margin-top: 15px;
- }
-
-  .foll a
-  {
-    color: #1FE2CB;
-    font-size: 14px;
-  }
-
-  .app ul
-  {
-    list-style-type: none;
-    font-family: 'Avenir LT Std 45 Book';
-    font-size: 17px;
-  }
-
-  .app ul :hover
-  {
-    border-bottom : 2px solid #1FE2CB;
-    width: 70px;
-  }
-
-.app ul li a
-{
-  color: black;
-}
-
-.app li
-{
-  margin-top: 15px;
-}
-
-.appfoll
-{
- display: flex;
- justify-content: space-between;
- padding-top: 3em;
- padding-bottom: 3em;
-}
-
-.appfoll a
-{
-  text-decoration: none;
-}
-
-.foll p
-{
-  color: #7c8a96;
-  font-size: 12px;
-}
-
-.foll p , .foll a
-{
-  font-family: 'Avenir LT Std 45 Book';
-}
-/*end rules div class appfoll*/
-
-
 /*end of the page home*/
 
-
-
-
-
-
-
 /*rules page download*/
-
-
 /*rules section class download*/
 .download img
 /*start of section features ivan */
@@ -1297,9 +1488,6 @@ margin-bottom: 2em;
   /*end rules page home*/
 }
 
-
-
-
 @media (min-width:615px)
 {
   /*rules page home*/
@@ -1338,8 +1526,6 @@ margin-bottom: 2em;
 {
   width: 50%;
 }
-
-
   /*end rules page home*/
 }
 
@@ -1357,12 +1543,6 @@ margin-bottom: 2em;
   }
   /*end rules page download*/
 }
-
-
-
-
-
-
 
 
 @media (min-width:900px)
@@ -1395,20 +1575,84 @@ margin-bottom: 2em;
     display: flex;
     flex-direction: row-reverse;
   }
-
-
+  
   .newsletter
   {
     width: 45%;
     height: auto;
+    text-align: center;
+    padding-top: 4em;
   }
 
+  .foll
+  {
+    width: 100%;
+    margin-left: 2em;
+}
+
+ .email input
+ {
+   width: 90%;
+}
+
+.whiteivan,.blackivan,.two,.homme
+{
+  margin-top: 10%;
+}
+
+.blackivan img,.figurehomme img,.blackivan2 img
+{
+  width: 750px;
+}
+
+.lefttwo
+{
+  width: 100%;
+}
+
+.marge,.rightblack
+{
+  margin: 2%;
+}
+
+.leftwhite,.rightwhite,.figurehomme,.righthomme
+{
+  width: 30%;
+}
+
+.lefthomme
+{
+  width: 48%;
+}
+
+.homme
+{
+  margin-right: 8%;
+}
+
+.lefttwo
+{
+  width: 80%;
+}
+
+.two
+{
+  margin-left: 8%
+}
+
+.rightblack
+{
+  width: 38%;
+}
+}
+
+
+/*end of media query 1280*/
+  
   .app
   {
     width: 40%;
   }
-
-
 
   .foll
   {
@@ -1538,8 +1782,6 @@ font-size: 22px;
 {
   width: 350px;
 }
-
-
 
 /*end of section features*/
 /* ==========================================================================

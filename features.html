@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="fonts/style.css">
   <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
@@ -23,35 +24,45 @@
   <!-- Add your site or application content here -->
 
 
-<!--____________________start of section features____________________________-->
+  <!-- start of nav mobile -->
 
   <section class="features">
 
 
+  <nav class="navbar navbar-toggleable-md navbar-light price">
 
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Features<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">download</a>
+        </li>
+      </ul>
+          </div>
 
-    <nav class="price">
       <article>
-        <ul>
-          <li><a href="#">Tour</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Download</a></li>
-        </ul>
-      </article>
-
-      <article>
-        <figure>
-          <img class "logoivan" src="favicon.ico" alt="Logo Quiver">
-        </figure>
+          <figure>
+              <img src="img/logo.png" alt="Logo Quiver">
+          </figure>
       </article>
 
       <article class="bouton">
-        <a class="btn btn-round-fill sunglow" href="#">Get 100GB for free</a>
-        <a class="btn btn-round-fill sunglow" href="#">Sign in</a>
+          <a class="btn btn-round-fill sunglow tablette" href="#">Get 100GB for free</a>
+          <a class="btn btn-round-fill sunglow" href="#">Sign in</a>
       </article>
-    </nav>
+
+
+</nav>
+
 
     <article class="center">
       <h1>Wall of Secure</h1>
@@ -59,23 +70,40 @@
 
     </article>
 
-    <div class="tel d-flex">
-      <figure><img src="img/iphone.png" alt=""></figure>
-      <figure><img src="img/android.png" alt=""></figure>
-    
-      <figure class="imageordi"><img   src="img/desktop.png" alt=""></figure>
 
-    </div>
+<div class="tel d-flex hiddn-lg-down">
+   <figure><img class="vignets lead" src="img/iphone.png" alt=""></figure>
+   <figure><img class"vignets lead" src="img/android.png" alt=""></figure>
 
-  </section>
+   <div class="ordinateur">
 
-  <!--_______________________end of section features_________________________-->
+     <figure class="imageordi"><img   src="img/desktop.png" alt=""></figure>
+
+   </div>
+
+
+
+</div>
+
+
+
+
+
+
+</section>
+
+
+
+  <!-- end of nav mobile -->
+
+
+
 
 <!--______________________ start of section  whiteivan_______________________-->
 
-<section class="whiteivan">
+<section class="whiteivan container ">
 
-  <article class="leftwhite">
+  <article class="leftwhite mx-auto ">
 
     <svg>
   <g xmlns="http://www.w3.org/2000/svg" id="real-time">
@@ -101,7 +129,7 @@
 
 
 
-  <article class="rightwhite">
+  <article class="rightwhite mx-auto">
 
 
 <svg>
@@ -133,20 +161,20 @@
 
 <!---_________________start of section blackivan____________________________-->
 
-<section class="blackivan">
+<section class="blackivan container">
 
-  <article class="leftblack">
 
-<figure class="figureivan">
-  <img src="img/tabletshare.jpg" alt="">
+
+<figure class="figureivan mx-auto">
+  <img src="img/tabletshare.jpg" alt="image de tablette">
 </figure>
 
-  </article>
 
 
 
 
-  <article class="rightblack">
+
+  <article class="rightblack mx-auto">
 
     <svg>
 
@@ -158,6 +186,7 @@
     </svg>
 
     <h3>Edit and share files with anyone, anywhere</h3>
+
 
     <p>You can Edit your files through the Quiver web app, Share securely via email, the cloud, or storage platforms like Box and Dropbox.</p>
 
@@ -175,9 +204,9 @@
 
 <!--______________________ start of section  whiteivan 2_______________________-->
 
-<section class="whiteivan">
+<section class="whiteivan container">
 
-  <article class="leftwhite">
+  <article class="leftwhite mx-auto">
 
     <svg>
 
@@ -199,7 +228,7 @@
 
 
 
-  <article class="rightwhite">
+  <article class="rightwhite mx-auto">
 
     <svg>
 
@@ -231,10 +260,14 @@
 
 <section class="homme">
 
-  <article class="lefthomme">
+  <article class="lefthomme mx-auto">
+
+    <h3>Want to experience
+worriless sharing
+For Free?</h3>
 
     <figure class="figurehomme">
-      <img src="img/demo.png" alt="">
+      <img src="img/demo.png" alt="image d'un homme">
     </figure>
 
 
@@ -243,7 +276,7 @@
 
 
 
-  <article class="righthomme">
+  <article class="righthomme container mx-auto">
 
 <svg>
 
@@ -260,14 +293,17 @@
 <p>Connect your Dropbox and Box Accounts and share your files with Quiver to keep them under control. If you connect your Dropbox or Box account now, you get the Standard Subscription for 6 Months FREE! (no credit card required)</p>
 <p>Quiver has minimal impact on your workflow, and empowers you to collaborate fast and efficiently.</p>
 
+<div class="socialreseau">
 
-<ul>
+
+<ul class=" d-flex ">
   <li><img src="img/logo-box.svg" alt=""></li>
   <li><img src="img/logo-dropbox.svg" alt=""></li>
   <li><img src="img/logo-drive.svg" alt=""></li>
   <li><img src="img/logo-microsoft.svg" alt=""></li>
 </ul>
 
+</div>
 
   </article>
 
@@ -287,9 +323,9 @@
 
 <!--______________________ start of section  whiteivan 3_______________________-->
 
-<section class="whiteivan">
+<section class="whiteivan container">
 
-  <article class="leftwhite">
+  <article class="leftwhite mx-auto">
 
       <svg>
 
@@ -321,7 +357,7 @@
 
 
 
-  <article class="rightwhite">
+  <article class="rightwhite mx-auto">
 
     <svg>
 
@@ -350,11 +386,11 @@
 
 <!--___________________start of section two colors __________________________-->
 
-<section class="two">
+<section class="two ">
 
 
 
-  <article class="lefttwo">
+  <article class="lefttwo container">
 
 <svg>
 
@@ -384,9 +420,10 @@
 
 
 
-  <article class="righttwo">
+  <article class="righttwo container-fluid ">
+    <div class=" marge row">
 
-    <h3>File level Protection</h3>
+    <h3 class="mx-auto">File level Protection</h3>
 
     <p>Define granular permission on your files, such as screenshot, geolocation and timebox protection, and easily define rules and policies for specific persons, groups,servers, networks and types of files</p>
 
@@ -394,13 +431,17 @@
 
     <p>Revoke, Unshare and Change restrictions instantly, and make sure your files are always under control!</p>
 
-    <figure>
 
-<img src="img/filepro.png" alt="">
+
+
+
+    <figure class="filepro mx-auto">
+
+<img  src="img/filepro.png" alt="image de fiche web">
 
     </figure>
 
-
+  </div>
 
 
   </article>
@@ -416,24 +457,24 @@
 
 <!---_________________start of section blackivan____________________________-->
 
-<section class="blackivan">
+<section class="blackivan2 ">
 
-  <article class="leftblack">
-
-<figure>
-  <img src="img/laptop.jpg" alt="">
-</figure>
-
-  </article>
+  <figure>
+    <img src="img/laptop.jpg" alt="image de pc de bureau">
+  </figure>
 
 
 
-
-  <article class="rightblack">
-
+  <article class="rightblack container-fluid">
 
 
-    <h3> Share files for a limited time,Integrated in your Native Apps</h3>
+
+
+
+
+
+      <h3> Share files for a limited time,Integrated in your Native Apps</h3>
+
 
     <p>Do you need tighter control? Just create a “time bomb” on a file, so it will only be available to the recipients given a certain timeframe. You decide when a file becomes unreadable for the recipient, so you will always be in control.</p>
 
@@ -450,43 +491,52 @@
 <!--_____________________end of section black ivan _________________________-->
 
 
-
-<!--____________________________ start of footer_____________________________-->
-
-
-<article class="leftfooter">
-
-  <div class="about">
-
-    <ul>
-      <li>Apps</li>
-      <li>About</li>
-      <li>Careers</li>
-    </ul>
-
-  </div>
-
-  <div class="social">
-
-    <p>Follow @quiverit on Twitter</p>
-    <p>Like Quiver on Facebook</p>
-
-  </div>
-
-</article>
+<!-- start div class touts -->
+   <div class="touts">
 
 
-<article class="rightfooter">
+       <!-- start div class newsletter -->
+       <div class="newsletter">
+           <p>Subscribe to our newsletter to start receiving Quiver news</p>
+           <form class="email" action="index.html" method="post">
+               <p><input type="text" name="Your e-mail" id="Your e-mail" value="Your e-mail"></p>
+           </form>
+
+       </div>
+       <!-- end div class newsletter -->
 
 
-  <h3>Subscribe to our newsletter to start receiving Quiver news.</h3>
+       <div class="appfoll">
 
-  <input type="text" name="" value="">
+           <!-- start nav class app -->
+           <nav class="app">
+               <ul>
+                   <li><a href="#">Apps</a></li>
+                   <li><a href="#">About</a></li>
+                   <li><a href="#">Careers</a></li>
+               </ul>
+           </nav>
+           <!-- start nav class app -->
 
-</article>
 
 
-<!-- _____________________________end of footer_____________________________ -->
+           <!-- start div class foll -->
+           <div class="foll">
+               <p>Follow <a href="#">@quiverit</a> on Twitter</p>
+               <p>Like <a href="#">Quiver</a> on Facebook</p>
+
+           </div>
+           <!-- end div class foll -->
+
+       </div>
+
+
+   </div>
+<!-- end div class touts -->
+
+
+
+
 
 
 
