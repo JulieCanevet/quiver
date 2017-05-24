@@ -269,6 +269,7 @@ nav
  justify-content: space-between;
  padding-top: 3em;
  padding-bottom: 3em;
+ margin-top: 3em;
 }
 
 .appfoll a
@@ -604,69 +605,6 @@ border-bottom-left-radius: 6px;
   line-height: 3em;
 }
 
-/*ivan commun rules*/
-
-.whiteivan h3, .blackivan h3, .two h3 , .homme h3,.blackivan2 h3
-{
-  font-size: 20px;
-  color: #36454e;
-  margin-bottom: 40px;
-  font-family: 'Avenir LT Std 35 Light';
-}
-
-.whiteivan p, .blackivan p, .two p , .homme p,.blackivan2 p
-{
-  color: #7c8a96;
-  font-size: 20px;
-  font-family: 'Avenir LT Std 45 Book';
-}
-
-svg
-{
-  height: 100px;
-}
-
-.blackivan,.blackivan2
-{
-  background-color: rgb(40,43,51);
-}
-
-.blackivan img, .homme img,.blackivan2 img
-{
-  width: 90%;
-}
-
-.blackivan h3,.righttwo h3,.righttwo p,.rightblack p,.blackivan2 h3
-{
-  color: white;
-}
-
-.lefthomme, .righttwo
-{
-  background-image: linear-gradient(#F63A4F,#F14430);
-}
-
-.lefthomme h3
-{
-  color: white;
-  font-size: 40px;
-  font-weight: bold;
-  text-align: center;
-}
-
-.rightblack h3
-{
-  font-size: 25px;
-  text-align: center;
-}
-
-/*end commun rules*/
-/*start of section features ivan */
-.features
-{
-  height: 75vh;
-  background-image: linear-gradient(#F63A4F,#F14430);
-}
 .responds h2
 {
   line-height: 0;
@@ -735,6 +673,71 @@ svg
 .started li:hover, .started li:hover i
 {
   color: #18e2bf;
+}
+
+
+/*ivan commun rules*/
+
+.whiteivan h3, .blackivan h3, .two h3 , .homme h3,.blackivan2 h3
+{
+  font-size: 20px;
+  color: #36454e;
+  margin-bottom: 40px;
+  font-family: 'Avenir LT Std 35 Light';
+}
+
+.whiteivan p, .blackivan p, .two p , .homme p,.blackivan2 p
+{
+  color: #7c8a96;
+  font-size: 20px;
+  font-family: 'Avenir LT Std 45 Book';
+}
+
+svg
+{
+  height: 100px;
+}
+
+.blackivan,.blackivan2
+{
+  background-color: rgb(40,43,51);
+}
+
+.blackivan img, .homme img,.blackivan2 img
+{
+  width: 90%;
+}
+
+.blackivan h3,.righttwo h3,.righttwo p,.rightblack p,.blackivan2 h3
+{
+  color: white;
+}
+
+.lefthomme, .righttwo
+{
+  background-image: linear-gradient(#F63A4F,#F14430);
+}
+
+.lefthomme h3
+{
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.rightblack h3
+{
+  font-size: 25px;
+  text-align: center;
+}
+
+/*end commun rules*/
+/*start of section features ivan */
+.features
+{
+  height: 75vh;
+  background-image: linear-gradient(#F63A4F,#F14430);
 }
 
 /*start of div tel*/
@@ -1276,9 +1279,6 @@ margin-bottom: 2em;
 
 /*end of the page home*/
 
-/*rules page download*/
-/*rules section class download*/
-.download img
 /*start of section features ivan */
 .features
 {
@@ -1368,8 +1368,6 @@ margin-bottom: 2em;
 }
 
 /*end rules article class trecen*/
-
-/*end rules page download*/
 
 
 
