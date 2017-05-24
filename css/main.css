@@ -94,12 +94,13 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
+body
+{
+  margin:0;
+}
 
 /* images font 100% de leur container */
-   .pricing img
+   .pricing img , .price img
    {
      width: 100%;
    }
@@ -114,7 +115,7 @@ textarea {
   justify-content: space-between;
   position: fixed;
   top: 0;
-
+  z-index: 1;
 }
 
 nav
@@ -126,6 +127,7 @@ nav
   align-items: baseline;
   background-color: white;
   flex-wrap: wrap;
+
 }
 
 /* Reglage de la liste à gauche de la nav */
@@ -143,6 +145,7 @@ nav
   padding: 10px 25px;
   border-radius: 30px 30px;
   background-color: orange;
+  color: white;
 }
 
 /* container du logo Quiver */
@@ -168,7 +171,7 @@ nav
   margin: auto;
   display: flex;
   flex-direction: column;
-  margin-top: 2em;
+  margin-top: 5em;
 }
 
 .centre p
@@ -180,6 +183,7 @@ nav
 {
   display: none;
 }
+
 
 /*start of the div class newsletter*/
   .newsletter
@@ -336,15 +340,18 @@ nav a, #navbarSupportedContent a
 }
 /* FIN DE CE QU'IL FAUT RECUPERER POUR LA NAV */
 }
+
 /* ------------------- SECTION PRIX ----------------- */
 .prix
 {
   display: flex;
   justify-content: center;
-  margin: 50px auto 50px auto;
+  margin: 50px auto;
+  margin-bottom: 0;
   flex-wrap: wrap;
   background-color: #F6F9F9;
 }
+
 .info
 {
   margin: 20px 0;
@@ -356,6 +363,28 @@ nav a, #navbarSupportedContent a
   list-style: none;
   line-height: 4em;
 }
+
+/* Bouton "view details" */
+.info p a 
+{
+  width: 310px;
+  height: 54px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-color: transparent;
+  padding-top: 15px;
+  padding-left: 110px;
+  background-color: #C8CDD6;
+  color: #3B4ECC;
+}
+
+.info p a:hover
+{
+  background-color: #C8CDD6;
+  color: #3B4ECC;
+  border-color: transparent;
+}
+
 
 .top
 {
@@ -369,15 +398,17 @@ nav a, #navbarSupportedContent a
 .top h2
 {
   margin-top: 60px;
-  font-size: 5em;
+  font-size: 4em;
   margin-bottom: 50px;
 }
+
 .top a
 {
   border: 2px solid white;
   border-radius: 30px 30px;
   color: white;
   padding: 10px 25px;
+  text-decoration: none;
 }
 .down
 {
@@ -386,26 +417,75 @@ nav a, #navbarSupportedContent a
   vertical-align: baseline;
   color: #7c8a96;
   background-color: white;
+  flex-direction: column;
+}
+.card
+{
+  border-color: transparent;
+}
+.prix .btn 
+{
+border-top-right-radius: 0px;
+border-top-left-radius: 0px;
+border-bottom-right-radius: 6px;
+border-bottom-left-radius: 6px;
 }
 
-.gris
+.gris, .gris a
 {
   background-color: #dae1eb;
   color: #3b4ecc;
+  border-color: #3b4ecc; 
 }
+.gris a:hover
+{
+  background-color: #3b4ecc;
+  color: white;
+  text-decoration: none;
+}
+
 .bleu
 {
   background-color: #6d98e6;
+}
+.bleu a:hover
+{
+  color: #6d98e6;
+  background-color: white;
+  border-color: white;
 }
 
 .marine
 {
   background-color: #3b4ecc;
 }
+.marine a:hover
+{
+  color: #3b4ecc;
+  background-color: white;
+  border-color: white;
+}
+
 .orange
 {
   background-color: #f79e02;
 }
+.orange h3
+{
+  color: #FBCF81;
+  font-size: 17px;
+  padding-bottom: 2.8em;
+  margin-top: 3em;
+}
+
+.orange a:hover
+{
+  color: #f79e02;
+  background-color: white;
+  border-color: white;
+}
+
+/* Titres dans l'ordre des ul de presentation des prix */
 .titre1
 {
   color: #91a4bf;
@@ -425,75 +505,155 @@ nav a, #navbarSupportedContent a
   color: #f79e02;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Degrade des listes de prix*/
+.clair1
+{
+  color: #C1C8CD;
+}
+
+.clair2
+{
+  color: #CBD1D6;
+}
+
+.clair3
+{
+  color: #D5D9DD;
+}
+
+.clair4
+{
+  color: #DFE2E5;
+}
+
+
+/* ------ CAROUSEL -------- */
+/* Paragraphe du carousel */
+.carousel-caption p
+{
+  color: black;
+  font-size: 20px;
+  margin-top: 1.8em;
+}
+
+/* Taille du carousel */
+.carousel
+{
+  max-height: 550px;
+ min-height: 530px;
+ margin-top: 0;
+}
+
+/* Image du carousel */
+.carousel .img-fluid
+{
+  width: 100%;
+  height: 530px;
+}
+
+/* CAROUSEL PARTIE JULIE */
+.tablette
+{
+  display: none;
+}
+.mobile
+{
+  display: flex;
+}
+
+/* Réglage des textes sur les photos carousel */
+.carousel-caption
+{
+  width: 75%;
+  margin: auto;
+  height: 80%;
+  font-family: 'Stardos Stencil', cursive;
+}
+/* -------------- DEBUT DE LA SECTION CAESAR ----------------- */
+
+.caesar figure
+{
+  width: 100%;
+  margin: 0;
+}
+.caesar img
+{
+  width: 100%;
+  z-index: -1;
+}
+
+/* Reglage du titre sur la photo caesar */
+.caesar figure h3
+{
+  position: absolute;
+  z-index: 0;
+  color: white;
+  text-align: center;
+  padding-top: 30%;
+  padding-left: 15%;
+  font-size: 4.5em;
+  line-height: 1.5em;
+  font-family: 'Stardos Stencil', cursive;
+}
+
+.caesar article
+{
+  background-image: linear-gradient(#F2403B, #EF4727);
+  padding: 4em;
+  color: white;
+}
+.caesar article h2
+{
+  margin-top: 2em;
+}
+
+.caesar article p
+{
+  margin-top: 4em;
+}
+
+/* SECTION GOOD */
+.good
+{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 2em;
+}
+
+/* SECTION KING */
+
+.king figure
+{
+  width: 100%;
+}
+
+/* Icones profit et université */
+.profit
+{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* reglage des lien "contact us"*/
+.ctc
+{
+  color: orange;
+}
+
+/* Fond gris bas de page */
+.light
+{
+  background-color: #F6F9F9;
+  margin: 0;
+}
+
+/* Section liste principale */
+.responds
+{
+  text-align: center;
+  line-height: 3em;
+}
 
 /*ivan commun rules*/
 
@@ -503,7 +663,6 @@ nav a, #navbarSupportedContent a
   color: #36454e;
   margin-bottom: 40px;
   font-family: 'Avenir LT Std 35 Light';
-
 }
 
 .whiteivan p, .blackivan p, .two p , .homme p,.blackivan2 p
@@ -511,7 +670,6 @@ nav a, #navbarSupportedContent a
   color: #7c8a96;
   font-size: 20px;
   font-family: 'Avenir LT Std 45 Book';
-
 }
 
 svg
@@ -553,66 +711,90 @@ svg
   text-align: center;
 }
 
-
-
-
-
-
 /*end commun rules*/
-
-
-
-
 /*start of section features ivan */
 .features
 {
   height: 75vh;
   background-image: linear-gradient(#F63A4F,#F14430);
-
 }
-
-.features img
+.responds h2
 {
-  width: 100%;
+  line-height: 0;
+  margin-bottom: 1em;
 }
-
-.center
+.responds h2 img
+{
+  margin-bottom: 30px;
+}
+.responds h2, .started h2
 {
   text-align: center;
   margin: auto;
   display: flex;
   flex-direction: column;
   margin-top: 25%;
+  color: #18e2bf;
+  padding-top: 1em;
+  padding-bottom: .75em;
 }
-
-.center h1
+.responds ul
 {
   font-size: 40px;
   color: white;
+  list-style: none;
 }
-
-.center h3
+.responds li a
 {
-font-size: 22px;
-color: white;
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
 }
 
-.tel img
+.responds li a:hover, .responds li a:focus
 {
-  width: 70px;
+  border: 2px solid #18e2bf;
+  color: #18e2bf;
+  padding: 10px 25px;
+  border-radius: 30px 30px;
 }
 
-.imageordi img
+/* Section listes secondaires */
+.started
 {
-  width: 350px;
+  width: 95%;
+  margin: auto;
 }
 
+.started ul
+{
+  margin-top: 2em;
+}
+.started li
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.started i
+{
+  color: grey;
+}
 
+.started li:hover, .started li:hover i
+{
+  color: #18e2bf;
+}
 
-/*end of section features*/
+footer
+{
+  margin: auto;
+  width: 90%;
+}
 
 /*start of div tel*/
-
 .tel
 {
  margin-top: 40px;
@@ -631,9 +813,6 @@ color: white;
 {
   display: none;
 }
-
-
-
 /*end of div tel*/
 
 
@@ -655,8 +834,6 @@ color: white;
 
 /*start of footer rules*/
 
-
-
 footer
 {
   display: flex;
@@ -674,10 +851,7 @@ footer
 {
   display: flex;
   font-family: 'Avenir LT Std 45 Book';
-    justify-content: space-between;
-
-
-
+  justify-content: space-between;
 }
 
 .follow
@@ -686,9 +860,7 @@ footer
   flex-direction: column;
   font-size: 15px;
   width: 50%;
-
-  }
-
+}
 
 .about ul
 {
@@ -745,16 +917,7 @@ footer
 {
   width: 700px;
 }
-
-
-
-
-
-
-
   /*end of black ivan*/
-
-
 
 }
 
@@ -781,10 +944,6 @@ footer
 {
   width: 100%;
 }
-
-
-
-
 }
 
 /*----------------------end of media query 980px-----------------------------*/
@@ -797,8 +956,6 @@ footer
   {
     margin: 1%;
   }
-
-
 
   .features
   {
@@ -839,24 +996,599 @@ footer
     margin-left: 10px;
 }
 
-.newsletter
+
+/* ########## DEBUT DU MEDIA QUERIE ########### */
+@media (min-width: 950px) {
+/* - - - - - - - - - PASSAGE NAV VERSION TABLETTE - - - - */
+/* ajout des marges au body */
+body
+{
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  }
+
+  nav
+  {
+    width: 100%;
+    height: 80px;
+    box-shadow: none;
+    flex-wrap: wrap;
+    background-color: transparent;
+  }
+
+.price
+{
+  position: relative;
+}
+  /* Liste à gauche de la barre */
+  #navbarSupportedContent
+  {
+    width: auto;
+  }
+
+/* Réglage des boutons à droite de la nav */
+.bouton
+{
+  display: flex;
+}
+.bouton a
+{
+  margin-right: 1em;
+}
+/* Liens de la bar de navigation */
+nav a, #navbarSupportedContent a
+{
+  color: white;
+}
+
+/* activation de la version tablette */
+  .tablette
+  {
+    display: flex;
+  }
+.mobile
+{
+  display: none;
+}
+/* FIN DE CE QU'IL FAUT RECUPERER POUR LA NAV */
+
+/* KING BONNES AFFAIRES */
+.king
+{
+  position: relative;
+  width: 650px;
+  margin: auto;
+  height: 420px;
+}
+
+ /* - - - REGLAGE DE LA PARTIE ROUGE CAESAR - - - - - */
+.caesar, .light
+{
+  display: flex;
+  width: 100%;
+}
+.caesar
+{
+  max-height: 540px;
+}
+
+.caesar article
+{
+
+  width: 90%;
+  padding-top: 0;
+  line-height: 20px;
+}
+.caesar article p
+{
+  margin-top: 1.5em;
+}
+.caesar img
+{
+  max-height: 540px;
+}
+.caesar figure h3
+{
+  padding-top: 20%;
+  padding-left: 8.5%;
+  font-size: 3em;
+  line-height: 1.3em;
+  font-family: 'Stardos Stencil', cursive;
+}
+
+/* - - - - MISE EN FORME DU KING version tablette - - - - */
+.good 
+{
+display: flex;
+width: 100%;
+align-items: center;
+margin-bottom: 2em;
+}
+
+.causes, .profit
+{
+  width: 20%;
+}
+.causes 
+{
+  text-align: left;
+}
+
+.king figure
+{
+  width: 100%;
+  margin-top: 3em;
+}
+
+.king figure img
+{
+  width: 100%;
+}
+
+.profit
+{
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* - - - - REGLAGE DES LISTES EN BAS DE PAGE - - - - - */
+.responds
+{
+  width: 50%;
+}
+.responds
+{
+  position: sticky;
+  top: 0;
+  height: 35em;
+}
+}
+  /*rules sana*/
+
+/*start of the page home*/
+
+  /*rules common*/
+  .torse
+  {
+    margin : 0;
+  }
+  /*end rules common*/
+
+
+  /*rules nav class home*/
+  .home
+  {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding-top: 2em;
+  }
+
+  .home article
+  {
+    width: auto;
+  }
+
+  .home li
+  {
+    list-style-type: none;
+    display: inline-block;
+  }
+
+  .home a
+  {
+    text-decoration: none;
+    margin-right: 2em;
+    color: white;
+    font-family: 'Avenir LT Std 65 Medium';
+    font-size: 20px;
+  }
+
+  .home a:hover
+  {
+    color: #99E9F9;
+  }
+
+  .home figure
+  {
+    width: 3em;
+  }
+
+  .tonbou .sig
+  {
+    background-color: white;
+    color: #14C7EB;
+  }
+
+  .tonbou .sig:hover
+  {
+    color: white;
+    background-color: #14C7EB;
+    border: solid 1px white;
+  }
+
+  .tonbou .down
+  {
+    background-color: transparent;
+  }
+  /*end rules nav class home*/
+
+
+
+  /*start section class accueil  */
+  .accueil img
+  {
+    width: 100%;
+  }
+
+  .accueil
+  {
+
+    background: url(../img/home-alone.png)#14C7EB;
+    background-size: 140vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: white;
+
+  }
+  /*end section class accueil*/
+
+  /*start article class tonbou*/
+  .tonbou a
+  {
+    padding: 10px 25px;
+    border-radius: 30px 30px;
+    background-color: orange;
+  }
+  /*end article class tonbou*/
+
+  /*start article class fullscre*/
+  .fullscre
+  {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 7em;
+  }
+
+  .fullscre span
+  {
+    background-color: #14C7EB;
+    border: solid white 1px;
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  .fullscre p
+  {
+    margin-top: 2em;
+  }
+
+  .click
+  {
+    background-color: white;
+    width: 80%;
+    color: #878D96;
+  }
+
+ .click1
+  {
+    background-color: orange;
+    width: 80%;
+    color: white;
+  }
+
+.click1:hover
+{
+  background-color: #14C7EB;
+  color: white;
+  border-color: white;
+}
+
+  .click , .click1
+  {
+    padding: 10px 25px;
+    border-radius: 30px 30px;
+    margin-bottom: 1em;
+  }
+
+  .fullscre h1
+  {
+    font-size: 34px;
+  }
+
+  .fullscre h3
+  {
+    font-family: 'Avenir LT Std 35 Light';
+    font-size: 20px;
+  }
+
+  .fullscre h3 span
+  {
+    font-size: 12px;
+  }
+
+  .fullscre p
+  {
+    font-size: 17px;
+  }
+
+  .join .click
+  {
+    font-family: 'Avenir LT Std 45 Book';
+  }
+
+  .fullscre h1 , .fullscre p , .join .click1
+  {
+    font-family: 'Avenir LT Std 95 Black';
+  }
+  /*end article class fullscre*/
+
+/*end of the page home*/
+
+/*rules page download*/
+/*rules section class download*/
+.download img
+/*start of section features ivan */
+.features
+{
+  height: 100vh;
+  background-image: linear-gradient(#F63A4F,#F14430);
+  color: white;
+}
+
+.features img
+{
+  width: 100%;
+}
+
+
+.download
+{
+  background-color: #00E7DA;
+  color: white;
+}
+/*end rules section class download*/
+
+
+/*rules article class trecen*/
+.trecen
+{
+  margin-top: 4em;
+}
+
+.trecen figure img
+{
+  height: 90px;
+  width: 90px;
+}
+
+.coming
+{
+  background-color: #99E9F9;
+  color: #00E7DA;
+  border-radius: 18px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-family: 'Avenir LT Std 95 Black';
+}
+
+.coming:hover
+{
+  color: #00E7DA;
+}
+
+.getit
+{
+  background-color: white;
+  color: #00E7DA;
+  border-radius: 18px;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  font-family: 'Avenir LT Std 95 Black';
+}
+
+.getit:hover
+{
+  color: white;
+  background-color: #00E7DA;
+  border: solid 1px white;
+}
+
+.windows , .mac , .beta , .android
+{
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 3em;
+  padding-top: 2em;
+}
+
+
+.windows h4 , .mac h4 , .beta h4 , .android h4
+{
+  margin-top: 2em;
+  font-family: 'Avenir LT Std 95 Black';
+  font-size: 20px;
+}
+
+.windows p , .mac p , .beta p , .android p
+{
+  font-family: 'Avenir LT Std 65 Medium';
+  font-size: 16px;
+}
+
+/*end rules article class trecen*/
+
+/*end rules page download*/
+
+
+
+@media (min-width:455px)
+{
+  /*rules page home*/
+
+  .accueil
+  {
+    height: 120vh;
+  }
+
+  .fullscre h1
+  {
+    font-size: 38px;
+  }
+
+  .fullscre h3
+  {
+    font-size: 24px;
+  }
+
+  .fullscre h3 span
+  {
+    font-size: 14px;
+  }
+
+  .fullscre p
+  {
+    font-size: 20px;
+  }
+
+  .email input
+  {
+    font-size: 32px;
+  }
+
+  .email input:hover
+  {
+    font-size: 15px;
+  }
+
+  .newsletter p
+  {
+    font-size: 19px;
+  }
+
+  .foll a
+  {
+    font-size: 16px;
+  }
+
+  .app ul
+  {
+    font-size: 20px;
+  }
+
+  .foll p
+  {
+    font-size: 14px;
+  }
+  /*end rules page home*/
+}
+
+@media (min-width:615px)
+{
+  /*rules page home*/
+
+
+/*rules section page accueil*/
+  .accueil
+  {
+    height: 100vh;
+  }
+  /*end rules section page accueil*/
+
+
+  /*rules div class foll*/
+  .foll
+  {
+    margin-right: 10em;
+  }
+  /*end rules div class foll*/
+
+
+/*rules article class fullscre*/
+.click
+{
+
+  width: 50%;
+}
+
+.click1
+{
+  width: 25%;
+}
+/*end rules article class fullscre*/
+
+.email input
+{
+  width: 50%;
+}
+  /*end rules page home*/
+}
+
+@media (min-width:768px)
+{
+  /*rules page download*/
+  .windows , .beta
+  {
+    border-right: 1px solid white;
+  }
+
+  .beta , .android
+  {
+    border-bottom: 0;
+  }
+  /*end rules page download*/
+}
+
+
+@media (min-width:900px)
+{
+  /*rules page home*/
+
+  /*rules common*/
+  .accueil
+  {
+    height: 120vh;
+  }
+
+  .torse
+  {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .trecen
+  {
+    margin-top: 4em;
+  }
+  /*end rules common*/
+
+/*rules div class touts*/
+
+  .touts
+  {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .newsletter
   {
     width: 45%;
     height: auto;
+    text-align: center;
+    padding-top: 4em;
   }
-
 
   .foll
   {
     width: 100%;
     margin-left: 2em;
 }
-
-.newsletter
- {
-   text-align: center;
-   padding-top: 4em;
- }
 
  .email input
  {
@@ -912,19 +1644,146 @@ footer
 {
   width: 38%;
 }
-
-
-
 }
 
 
 /*end of media query 1280*/
+  
+  .app
+  {
+    width: 40%;
+  }
+
+  .foll
+  {
+    width: 40%;
+    margin-left: 2em;
+  }
+
+  .newsletter
+  {
+    text-align: center;
+    padding-top: 4em;
+  }
+
+  .email input
+  {
+    width: 90%;
+  }
+  /*end rules div class touts*/
+
+
+/*rules font-size elements*/
+
+.fullscre h1
+{
+  font-size: 52px;
+}
+
+.fullscre h3
+{
+  font-size: 30px;
+}
+
+.fullscre h3 span
+{
+  font-size: 19px;
+}
+
+.fullscre p
+{
+  font-size: 21px;
+}
+
+.email input
+{
+  font-size: 32px;
+}
+
+.email input:hover
+{
+  font-size: 15px;
+}
+
+.newsletter p
+{
+  font-size: 26px;
+}
+
+.foll a
+{
+  font-size: 18px;
+}
+
+.app ul
+{
+  font-size: 22px;
+}
+
+.foll p
+{
+  font-size: 15px;
+}
+
+/*end rules font-size elements*/
+
+  /*end rules page home*/
 
 
 
+  @media (min-width:992px)
+  {
+    /*rules page download*/
+    .trecen
+    {
+      height: 100vh;
+      margin-top: 3em;
+    }
 
+    .mac
+    {
+      border-right: 1px solid white;
+    }
 
+    .windows , .mac
+    {
+      border-bottom: 0;
+    }
+    /*end rules page download*/
+  }
 
+  /*end rules sana*/
+
+.center
+{
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+.center h1
+{
+  font-size: 40px;
+}
+
+.center h3
+{
+font-size: 22px;
+}
+
+.tel img
+{
+  width: 70px;
+}
+
+.imageordi img
+{
+  width: 350px;
+}
+
+/*end of section features*/
 /* ==========================================================================
    Helper classes
    ========================================================================== */
